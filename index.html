@@ -12,19 +12,23 @@
   <meta content="red" name="theme-color">
   <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
   <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Rubik+Iso&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-  <p>CodeWith<span>Luci.</span></p>
+  <p id="pageName">CodeWith<span>Luci.</span></p>
 
-  <nav>
+  <nav id="mainNav">
     <menu>
-      <li><a href="#">Home</a></li>
-      <li><a href="#lang">Lang&Tools</a></li>
-      <li><a href="#project">MyProjects</a></li>
-      <li><a href="#badge">Badges</a></li>
-      <li><a href="#about">WhoAmI</a></li>
-      <li><a href="#contact">ContactMe</a></li>
+      <li><a href="#" id="homeNav">Home</a></li>
+      <li><a href="#lang" id="langNav">Lang&Tools</a></li>
+      <li><a href="#project" id="projectNav">MyProjects</a></li>
+      <li><a href="#badge" id="badgeNav">Badges</a></li>
+      <li><a href="#about" id="aboutNav">WhoAmI</a></li>
+      <li><a href="#contact" id="contactNav">ContactMe</a></li>
     </menu>
   </nav>
 
@@ -33,19 +37,19 @@
 <!--Home or landing page-->
 
 <section>
-  <p>
-    Hi There...| <br>
+  <p id="introP1">
+    <span id="hi">Hi There...|</span> <br>
     I am Rusiru buuut... <br>
     You can call me <br>
     <span>Luci.</span>
 
   </p>
 
-  <div>
+  <div id="luciHomePic">
     <img src="/assets/img/home/RuHDIam%20photography-9110.png" alt="Picture of Luci" width="600">
   </div>
 
-  <p>
+  <p id="introP2">
     Let’s build perfect <br>
     software solution <br>
     for your startup <br>

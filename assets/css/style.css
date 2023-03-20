@@ -1,0 +1,38 @@
+span{
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+[id="mainNav"]{
+    text-align: center;
+
+}
+
+[id="pageName"]{
+    font-family: inter;
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+[id="hi"]{
+    color: #211f1f;
+    font-style: italic;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: "Paytone One";
+}
+
+[id="luciHomePic"]{
+    align-content: space-between;
+}
+
+[id="introP1"]{
+    font-size: large;
+}
+
+[id="introP2"]{
+    font-size: large;
+    text-align: right;
+}
