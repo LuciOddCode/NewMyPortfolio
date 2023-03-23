@@ -1,38 +1,123 @@
-span{
-    color: rgba(255, 0, 0, 0.8);
-    font-weight: bold;
+/*section header*/
+header{
+    height: 200px;
+    position: relative;
+
 }
 
+/*hoe page navigation area and page name*/
 [id="mainNav"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
+}
+.as {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    white-space: normal;
+    text-align: center;
+
+}
+
+menu{
+    display: flex;
+    list-style: none;
+    white-space: normal;
 }
 
 [id="pageName"]{
     font-family: inter;
     font-weight: bolder;
     font-size:x-large;
+    color: #1a1717;
 }
 
+
+/*main page body area*/
+body{
+    width: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+}
+
+/*cursor animation after the hi there*/
+.cursor span::after{
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: red;
+    display: inline-block;
+
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+
+/*changed all seperated text to red*/
+span{
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+
 [id="hi"]{
-    color: #211f1f;
+    color: #151414;
     font-style: italic;
 }
 
+/*change all paragraph color*/
 p{
-    color: rgba(0, 0, 0, 0.80);
+    color: #151414;
     font-family: "Paytone One";
 }
 
-[id="luciHomePic"]{
-    align-content: space-between;
+[id="homeSec"]{
+    height: 766px;
 }
-
 [id="introP1"]{
     font-size: large;
+    animation-name: cursor;
+    animation-duration: 4s;
+}
+
+[id="luciHomePic"]{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+
+
 }
 
 [id="introP2"]{
     font-size: large;
     text-align: right;
 }
+
+[id="homeSec"]{
+    height:available;
+}
+
+/*Foot area*/
+[id="footNote"]{
+    background-color: #363636;
+
+}
+[id="copyRight"]{
+    text-align: left;
+    color: white;
+}
+[id="year"]{
+    text-align: center;
+    color: white;
+}
+
+[id="made"]{
+     text-align: right;
+    color: white;
+ }
+
+
