@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeWithLuci</title>
+
+    <link rel="stylesheet" href="assignments/css/CaseOne/normalize.css">
+
+    <style>
+        body{
+            width: 100vw;
+            height: 200vh;
+        }
+        body>section{
+            width: 50%;
+            height: 50%;
+            border: 2px solid black;
+            position: absolute;
+            margin: 0 auto;
+
+        }
+
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .pink{
+            background-color: deeppink;
+        }
+
+
+        #red1{
+            left: 0;
+        }
+        #green1{
+            right: 0;
+        }
+        #orange1{
+            left: 0;
+            bottom: 0;
+            margin: 0 auto;
+            font-size: 0;
+        }
+        #pink1{
+            right: 0;
+            bottom: 0;
+        }
+
+
+       /* #red2{
+            left: 0;
+            bottom: ;
+        }*/
+
+        section:nth-child(1)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+        }
+
+        section:nth-child(1)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        section:nth-child(1)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+
+        }
+        section:nth-child(1)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*green sec 1*/
+        section:nth-child(2)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+        }
+
+        section:nth-child(2)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        section:nth-child(2)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(2)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*orange sec 1*/
+        section:nth-child(3)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-top-right-radius: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        section:nth-child(3)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        section:nth-child(3)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(3)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*pink sec 1*/
+        section:nth-child(4)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-top-right-radius: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        section:nth-child(4)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        section:nth-child(4)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(4)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+
+
+        /*Second section*/
+
+        #red2{
+            left: 0;
+            top: 100vh;
+            margin: 0 auto;
+            font-size: 0;
+        }
+        #green2{
+            right: 0;
+            top: 100vh;
+        }
+        #orange2{
+            left: 0;
+            top: 150vh;
+        }
+        #pink2{
+            right: 0;
+            top: 150vh;
+        }
+
+
+        section:nth-child(5)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+        }
+
+        section:nth-child(5)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        section:nth-child(5)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(5)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*green sec 1*/
+        section:nth-child(6)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+        }
+
+        section:nth-child(6)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        section:nth-child(6)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(6)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*orange sec 1*/
+        section:nth-child(7)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-top-right-radius: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        section:nth-child(7)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        section:nth-child(7)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(7)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        /*pink sec 1*/
+        section:nth-child(8)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-top-right-radius: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        section:nth-child(8)>div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        section:nth-child(8)>div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        section:nth-child(8)>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+
+
+
+    </style>
+
+  </head>
+<body>
+
+<section class="red" id="red1">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="green" id="green1">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="orange" id="orange1">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="pink" id="pink1">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+
+
+<!--<section class="red" ></section>
+<section class="green" ></section>
+<section class="orange" id="orange2"></section>
+<section class="pink" id="pink2"></section>-->
+
+
+<section class="red" id="red2">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="green" id="green2">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="orange" id="orange2">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="pink" id="pink2">
+    <div ></div>
+    <div ></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

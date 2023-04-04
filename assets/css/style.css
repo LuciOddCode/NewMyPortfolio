@@ -1,16 +1,22 @@
 /*section header*/
 header{
     height: 200px;
-    position: relative;
+    position: center;
+}
 
+.headerMain{
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    max-height: 100px;
 }
 
 /*hoe page navigation area and page name*/
-[id="mainNav"]{
+#mainNav{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: right;
 
 }
 .as {
@@ -20,20 +26,23 @@ header{
     min-height: 10vh;
     white-space: normal;
     text-align: center;
+    padding: 5px;
 
 }
 
-menu{
+menu li{
     display: flex;
     list-style: none;
     white-space: normal;
+    padding: 0 5px;
 }
 
-[id="pageName"]{
+#pageName{
     font-family: inter;
     font-weight: bolder;
     font-size:x-large;
     color: #1a1717;
+    padding-right: 500px;
 }
 
 
@@ -64,7 +73,7 @@ span{
 }
 
 
-[id="hi"]{
+#hi{
     color: #151414;
     font-style: italic;
 }
@@ -75,16 +84,16 @@ p{
     font-family: "Paytone One";
 }
 
-[id="homeSec"]{
+#homeSec{
     height: 766px;
 }
-[id="introP1"]{
-    font-size: large;
+#introP1{
+    font-size: xx-large;
     animation-name: cursor;
     animation-duration: 4s;
 }
 
-[id="luciHomePic"]{
+#luciHomePic{
     display: block;
     margin: 0 auto;
     width: 40%;
@@ -92,30 +101,36 @@ p{
 
 }
 
-[id="introP2"]{
+#introP2{
     font-size: large;
     text-align: right;
 }
 
-[id="homeSec"]{
+#homeSec{
     height:available;
 }
 
+
+/*Lang page*/
+#languageIcon{
+
+}
+
 /*Foot area*/
-[id="footNote"]{
+#footNote{
     background-color: #363636;
 
 }
-[id="copyRight"]{
+#copyRight{
     text-align: left;
     color: white;
 }
-[id="year"]{
+#year{
     text-align: center;
     color: white;
 }
 
-[id="made"]{
+#made{
      text-align: right;
     color: white;
  }
