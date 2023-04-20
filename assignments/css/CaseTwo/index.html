@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>CaseTwo</title>
-    <link href="/assests/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assests/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="assests/normalize.css" rel="stylesheet">
+    <link href="assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
     <style>
-        body>header {
+
+
+        body > header {
+
             border: 2px solid black;
             display: flex;
             position: relative;
         }
 
-        body>header>img{
+        body > header > img {
             position: relative;
             display: inline;
         }
-        body>header>nav{
+
+        body > header > nav {
             position: absolute;
             right: 0;
         }
-        body>header>nav>ul{
+
+        body > header > nav > ul {
             position: relative;
             display: flex;
             list-style: none;
 
         }
 
-        body>header>nav>ul>li{
-          margin-right: 5px;
+        body > header > nav > ul > li>i {
+            margin-right: 2px;
+
+        }
+        body > header > nav > ul > li >a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
         }
 
 
+        body>main>nav{
+            width: 25vw;
+            background: blueviolet;
+        }
 
 
     </style>
@@ -39,28 +54,38 @@
 <body>
 <header>
 
-            <img alt="IJSE logo" src="/assests/ijse.png" width="200px">
+    <img alt="IJSE logo" src="/assests/ijse.png" width="200px">
 
-            <nav>
-                <i class="fa-solid fa-house"></i>
+    <nav>
+        <ul>
 
-            </nav>
+            <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+
+            <li><i class="fa-solid fa-globe"></i> <a href="">Service</a></li>
+
+            <li><i class="fa-solid fa-address-book"></i><a href="">Contact</a></li>
+
+            <li><i class="fa-solid fa-hand-holding-heart"></i> <a href="">About Us</a></li>
+        </ul>
+
+
+    </nav>
 
 </header>
 <main>
-            <nav>
-                <li>Home</li>
-                <li>Service</li>
-                <li>Contact</li>
-                <li>About Us</li>
-            </nav>
+    <nav>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </nav>
 
     <section>
-            <img alt="audi" src="/assests/images.jpg" >
+        <img alt="audi" src="/assests/images.jpg">
 
-            <img alt="audi" src="/assests/images.jpg" >
+        <img alt="audi" src="/assests/images.jpg">
 
-            <img alt="audi" src="/assests/images.jpg"  width=>
+        <img alt="audi" src="/assests/images.jpg" width=>
 
         <p>Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. A animi consequatur corporis fuga itaque laborum
@@ -88,11 +113,11 @@
             soluta suscipit temporibus voluptate voluptatem?
         </p>
 
-            <img alt="audi" src="/assests/images.jpg">
+        <img alt="audi" src="/assests/images.jpg">
 
-            <img alt="audi" src="/assests/images.jpg">
+        <img alt="audi" src="/assests/images.jpg">
 
-            <img alt="audi" src="/assests/images.jpg">
+        <img alt="audi" src="/assests/images.jpg">
 
 
         <p>Lorem ipsum dolor sit amet, consectetur
