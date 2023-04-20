@@ -5,13 +5,19 @@
     <title>CaseTwo</title>
     <link href="assests/normalize.css" rel="stylesheet">
     <link href="assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="">
+
     <style>
 
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+        *{
+            font-family: 'Roboto Thin', sans-serif;
+        }
         body > header {
 
             border: 2px solid black;
-            display: flex;
+            display: block;
             position: relative;
         }
 
@@ -23,17 +29,21 @@
         body > header > nav {
             position: absolute;
             right: 0;
+            top: 0;
         }
 
         body > header > nav > ul {
             position: relative;
-            display: flex;
+            display: inline;
             list-style: none;
 
         }
 
-        body > header > nav > ul > li>i {
-            margin-right: 2px;
+        body > header > nav > ul > li {
+            position: relative;
+            display: inline;
+            top: 20px;
+            list-style: none;
 
         }
         body > header > nav > ul > li >a {
@@ -43,9 +53,90 @@
         }
 
 
+        body > header > nav > ul > li >i {
+            margin-right: 2px;
+            color: red;
+        }
+
+        body>main{
+            position: relative;
+        }
+
         body>main>nav{
+
             width: 25vw;
+            position: absolute;
+            top: 0;
+            bottom: 0;
             background: blueviolet;
+        }
+
+        body>main>nav>ul{
+            position: relative;
+            left: 0;
+            right: 0;
+            list-style: none;
+        }
+
+        body>main>nav>ul>li{
+
+            position: relative;
+            left: 0;
+            right: 0;
+            padding-bottom: 25px;
+            color: white;
+        }
+
+        body>main>nav>ul>li>a{
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            padding-left: 15px;
+        }
+
+
+        body>main>section>section{
+            position: relative;
+            height: calc(100vh/3);
+        }
+        body>main>section>section>div{
+            height: 100%;
+            width: calc(100%/3);
+            position: absolute;
+
+        }
+
+        body>main>section>section>div:nth-child(2){
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        body>main>section>section>div:nth-child(3){
+            right: 0;
+        }
+
+
+        body>main>section{
+            width: 70vw;
+            position: relative;
+            left: 28vw;
+
+
+        }
+        body>main>section>p:last-child{
+            margin: 0;
+        }
+
+        footer{
+           background: red;
+            margin: 0;
+        }
+        footer>p{
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: 0;
+
         }
 
 
@@ -74,18 +165,32 @@
 </header>
 <main>
     <nav>
-        <li>Home</li>
-        <li>Service</li>
-        <li>Contact</li>
-        <li>About Us</li>
+        <ul>
+
+            <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+
+            <li><i class="fa-solid fa-globe"></i> <a href="">Service</a></li>
+
+            <li><i class="fa-solid fa-address-book"></i><a href="">Contact</a></li>
+
+            <li><i class="fa-solid fa-hand-holding-heart"></i> <a href="">About Us</a></li>
+        </ul>
     </nav>
 
     <section>
-        <img alt="audi" src="/assests/images.jpg">
+        <section>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
 
-        <img alt="audi" src="/assests/images.jpg">
+        </section>
 
-        <img alt="audi" src="/assests/images.jpg" width=>
 
         <p>Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. A animi consequatur corporis fuga itaque laborum
@@ -113,12 +218,18 @@
             soluta suscipit temporibus voluptate voluptatem?
         </p>
 
-        <img alt="audi" src="/assests/images.jpg">
+        <section>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
+            <div>
+                <img alt="audi" src="/assests/images.jpg">
+            </div>
 
-        <img alt="audi" src="/assests/images.jpg">
-
-        <img alt="audi" src="/assests/images.jpg">
-
+        </section>
 
         <p>Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. A animi consequatur corporis fuga itaque laborum
