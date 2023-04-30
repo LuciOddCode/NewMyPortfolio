@@ -1,138 +1,151 @@
-/*section header*/
-header{
-    height: 200px;
-    position: center;
-}
-
-.headerMain{
-    display: flex;
-    align-items: center;
-    min-height: 10vh;
-    max-height: 100px;
-}
-
-/*hoe page navigation area and page name*/
-#mainNav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-
-}
-.as {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-    white-space: normal;
-    text-align: center;
-    padding: 5px;
+main{
+    position: relative;
+    height: 600vh;
+    width: 98vw;
 
 }
 
-menu li{
-    display: flex;
-    list-style: none;
-    white-space: normal;
-    padding: 0 5px;
-}
+body>main>header{
+    position:fixed;
+    background: white;
+    height: 50px;
+    width: 98vw;
+    top: 0;
+    z-index: 10;
 
-#pageName{
-    font-family: inter;
+}
+body>main>header>p{
+    position: relative;
+    display: inline;
+    font-size: 20px;
     font-weight: bolder;
-    font-size:x-large;
-    color: #1a1717;
-    padding-right: 500px;
+    font-family: 'Roboto Mono', monospace;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+body>main>header>p>span{
+    color: red;
 }
 
 
-/*main page body area*/
-body{
-    width: auto;
-    margin: 0 auto;
-    background-color: white;
-    padding: 0 20px 20px 20px;
-}
-
-/*cursor animation after the hi there*/
-.cursor span::after{
-    content: "";
-    width: 5px;
-    height: 20px;
-    background: red;
+body>main>header>nav{
+    position: absolute;
     display: inline-block;
-
-    animation: cursor-blink 1.5s steps(2) infinite;
+    right: 100px;
+    top: 0;
 }
 
-
-/*changed all seperated text to red*/
-span{
-    color: rgba(255, 0, 0, 0.8);
-    font-weight: bold;
-}
-
-
-#hi{
-    color: #151414;
-    font-style: italic;
-}
-
-/*change all paragraph color*/
-p{
-    color: #151414;
-    font-family: "Paytone One";
-}
-
-#homeSec{
-    height: 766px;
-}
-#introP1{
-    font-size: xx-large;
-    animation-name: cursor;
-    animation-duration: 4s;
-}
-
-#luciHomePic{
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-
+body>main>header>nav>menu{
+    position: relative;
 
 }
 
-#introP2{
-    font-size: large;
-    text-align: right;
+body>main>header>nav>menu>li{
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: red;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
 }
 
-#homeSec{
-    height:available;
+body>main>section{
+    position: relative;
+    height: 100vh;
+    width: 98vw;
+    top: 50px;
 }
 
-
-/*Lang page*/
-#languageIcon{
-
+body>main>section:nth-child(2) span{
+    color: red;
 }
-
-/*Foot area*/
-#footNote{
-    background-color: #363636;
-
-}
-#copyRight{
+body>main>section:nth-child(2)>p:nth-child(1){
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline;
+    z-index: 1;
+    left: 100px;
     text-align: left;
-    color: white;
+    top: 50px;
+
 }
-#year{
+body>main>section:nth-child(2)>div{
+    position: sticky;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body>main>section:nth-child(2)>div>img{
+    position: relative;
+    display: block;
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body>main>section:nth-child(2)>p:nth-child(3){
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline;
+    z-index: 1;
+    right: 100px;
+    text-align: right;
+    bottom: 100px;
+}
+
+body>main>section:nth-child(3)>p:nth-child(1){
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline;
+    z-index: 1;
+    left: 100px;
+    text-align: right;
+    top: 0px;
+}
+
+body>main>section:nth-child(3)>div{
+    top: 50px;
+}
+
+body>main>section:nth-child(3)>div figure{
+    position: relative;
+    display: inline;
+    top: 150px;
+    margin: 0;
+    left: 100px;
+
+}
+
+body>main>section:nth-child(3)>div figure>figcaption{
+    position: relative;
+    display: inline;
+
+
+}
+body>main>section:nth-child(3)>p:nth-child(3){
+    position: absolute;
+    display: inline;
     text-align: center;
-    color: white;
+    font-size: 35px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
 }
 
-#made{
-     text-align: right;
-    color: white;
- }
+body>main>section:nth-child(4)>div>figure{
 
-
+}
