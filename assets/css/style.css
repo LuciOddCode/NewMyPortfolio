@@ -174,8 +174,8 @@ body>main>section:nth-child(4)>div>p{
 }
 
 body>main>section:nth-child(5)>div figure{
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    display: inline;
     left: 0;
     right: 0;
     margin: auto;
@@ -183,10 +183,21 @@ body>main>section:nth-child(5)>div figure{
 }
 body>main>section:nth-child(5)>div figure>figcaption{
     position: relative;
-    display: flex;
+    display: inline;
     left: 70px;
     right: 0;
     bottom: 0;
     margin: auto;
 
+}
+
+body>main>section:nth-child(5)>div>p{
+    position: absolute;
+    display: inline;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
+
+    bottom: 100px;
+    margin: auto;
 }
