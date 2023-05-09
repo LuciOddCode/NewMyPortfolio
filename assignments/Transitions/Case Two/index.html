@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseTwo</title>
+    <link href="../assests/normalize.css" rel="stylesheet">
+    <link href="../assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            position: relative;
+            width: 98vw;
+            height: 100vh;
+            background: repeating-linear-gradient(#1537f5,#386ef5);
+
+        }
+
+        body>div{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+        body>div:nth-child(1){
+            height: 300px;
+            width: 300px;
+            border: 20px solid white;
+            border-radius: 100%;
+
+        }
+
+        body>div:nth-child(2){
+            height: 300px;
+            width: 300px;
+            border-top: 20px solid red;
+            border-right: 20px solid white;
+            border-left:20px solid white ;
+            border-bottom: 20px solid white;
+            border-radius: 100%;
+            z-index: 2;
+
+
+
+        }
+
+        body>div:nth-child(2):hover{
+            transform: rotate(360deg);
+            transition: transform 0.5s ease-in-out;
+        }
+
+
+        body>div:nth-child(3){
+            height: 300px;
+            width: 300px;
+            border: 10px solid white;
+            border-radius: 100%;
+            z-index: -1;
+            background: #3b5060;
+            color: white;
+            text-align: center;
+
+
+        }
+
+        body>div:nth-child(3)>h1{
+            position: absolute;
+            display: inline-table;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+  <div></div>
+  <div></div>
+  <div><h1>RWAD</h1></div>
+
+</body>
+</html>

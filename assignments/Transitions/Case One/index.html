@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseTwo</title>
+    <link href="../assests/normalize.css" rel="stylesheet">
+    <link href="../assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+
+    <style>
+        body{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            flex-wrap: nowrap;
+            top: 130px;
+            right: 200px;
+            gap: 10px;
+        }
+
+        div{
+            position: relative;
+            height: 60px;
+            left: 0;
+            box-shadow: 2px 2px 2px 2px black;
+            background: deeppink;
+            transition-property: all;
+            transition-duration: 2s;
+
+
+        }
+        div:hover{
+            left: 200px;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        div>i{
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            height: max-content;
+            width: max-content;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
+
+
+        }
+
+
+        div>h1{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+            height: max-content;
+            width: max-content;
+            color: white;
+            font-family: 'Ubutu' , sans-serif;
+            font-size: 20px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Menu One</h1>
+        <i class="fa-solid fa-address-book" style="color: #ffffff;"></i>
+    </div>
+    <div>
+        <h1>Menu two</h1>
+
+        <i class="fa-solid fa-truck-fast" style="color: #ffffff;"></i>
+    </div>
+    <div>
+        <h1>Menu Three</h1>
+
+        <i class="fa-solid fa-face-smile" style="color: #ffffff;"></i></i>
+        <p></p>
+    </div>
+    <div>
+        <h1>Menu Four</h1>
+
+        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+        <p></p>
+    </div>
+    <div>
+        <h1>Menu Five</h1>
+
+        <i class="fa-brands fa-youtube" style="color: #fcfcfd;"></i>
+        <p></p>
+    </div>
+
+</body>
+</html>
