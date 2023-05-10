@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change afterPath="$PROJECT_DIR$/assignments/Transitions/Case Four/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/Transitions/Case Three/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/Case Five/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/Case Six/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/Car_Animation_Img/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/Car_Animation_Img/city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/Car_Animation_Img/road.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/Car_Animation_Img/sky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/Car_Animation_Img/wheel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/imgForCaseFive/The Jump re coloured.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/imgForCaseFive/im lucifer text.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/imgForCaseFive/pata marusalamandara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/Transitions/assests/imgForCaseFive/yellow man.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Transitions/Case One/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Transitions/Case One/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Transitions/Case Four/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Transitions/Case Four/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +143,8 @@
       <workItem from="1683202212309" duration="1381000" />
       <workItem from="1683210135457" duration="1270000" />
       <workItem from="1683514829198" duration="9851000" />
-      <workItem from="1683595478224" duration="18475000" />
+      <workItem from="1683595478224" duration="18668000" />
+      <workItem from="1683689790916" duration="12097000" />
     </task>
     <servers />
   </component>

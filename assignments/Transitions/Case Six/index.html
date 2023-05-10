@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseSix</title>
+    <link href="../assests/normalize.css" rel="stylesheet">
+    <link href="../assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+
+    <style>
+        body>section>div:nth-child(1){
+            position: relative;
+            top: 50px;
+            height: 720px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        body>section>div:nth-child(2){
+            position: absolute;
+            bottom: 0;
+            height: 720px;
+            width: 100%;
+            margin: auto;
+
+        }
+        body>section>div:nth-child(2)>div:nth-child(3){
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+
+        }
+        body>section>div:nth-child(2)>div:nth-child(1){
+            position: absolute;
+            display: inline-block;
+            bottom: 300px;
+
+        }
+        body>section>div:nth-child(2)>div:nth-child(2){
+            position: absolute;
+            display: inline-block;
+            bottom: 300px;
+            left: 1416px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <!--this is sky div-->
+        <img src="../assests/Car_Animation_Img/sky.jpg" alt="city" height="720px" width="100%">
+
+    </div>
+    <div>
+        <!--road and city-->
+        <div><img src="../assests/Car_Animation_Img/city.png" alt="city"></div>
+        <div><img src="../assests/Car_Animation_Img/city.png" alt="city"></div>
+        <div><img src="../assests/Car_Animation_Img/road.jpg" alt="city"></div>
+    </div>
+
+    <div>
+        <!--vehicle div-->
+        <div><!--left wheel--></div>
+        <div><!--right wheel--></div>
+    </div>
+
+</section>
+</body>
+</html>

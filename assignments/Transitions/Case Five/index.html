@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseFive</title>
+    <link href="../assests/normalize.css" rel="stylesheet">
+    <link href="../assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body>div{
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            height: 720px;
+            width: 1280px;
+            left: 200px;
+            right: 0;
+            top: 50px;
+            margin: auto;
+        }
+
+        @keyframes slide_animation {
+            0% {
+                left: 0px;
+            }
+            10% {
+                left: 0px;
+            }
+            20% {
+                left: 1280px;
+            }
+            30% {
+                left: 2560px;
+            }
+            40% {
+                left: 2560px;
+
+            }
+            50% {
+                left: 3840px;
+
+            }
+            60% {
+                left: 3840px;
+
+            }
+            70% {
+                left: 5120px;
+
+            }
+            80% {
+                left: 3840px;
+            }
+            90% {
+                left: 2560px;
+            }
+            95%{
+                left: 1280px;
+            }
+            100% {
+                left: 0;
+            }
+
+        }
+
+        body>div>div{
+            width: 5120px;
+            height: 720px;
+            margin: 0 0 0 -5120px;
+            position: relative;
+            animation: slide_animation ease-in-out;
+            animation-duration: 30s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+
+        }
+
+        body>div>div>div{
+            height: 720px;
+            width: 1280px;
+            position: relative;
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <img alt="imluci" height="100%" src="../assests/imgForCaseFive/im lucifer text.jpg" width="100%">
+        </div>
+        <div>
+            <img alt="" height="100%" src="../assests/imgForCaseFive/pata%20marusalamandara.jpg" width="100%">
+        </div>
+        <div>
+            <img alt="" height="100%" src="../assests/imgForCaseFive/The%20Jump%20re%20coloured.jpg" width="100%">
+        </div>
+        <div>
+            <img alt="" height="100%" src="../assests/imgForCaseFive/yellow%20man.jpg" width="100%">
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
