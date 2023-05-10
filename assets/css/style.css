@@ -330,3 +330,53 @@ body>main>section:nth-child(7)>p:nth-child(1){
 body>main>section:nth-child(7)>p:nth-child(1)>span{
     color: red;
 }
+
+body>main>section:nth-child(7)>div:nth-child(2){
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    left: 35%;
+    top: 100px;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Paytone One', monospace;
+}
+body>main>section:nth-child(7)>div:nth-child(2)>label{
+    padding-right: 10px;
+}
+body>main>section:nth-child(7)>div:nth-child(3){
+    position: relative;
+    width: 50vw;
+    height: 200px;
+    top: 0px;
+    left: 10%;
+}
+
+body>main>section:nth-child(7)>div:nth-child(3)>a>input{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    width: 438px;
+    height: 88px;
+    background-color: #1537f5;
+    color: white;
+    border-radius: 10px;
+    box-shadow: #49f5f3 2px 2px 2px;
+    font-size: 20px;
+}
+body>main>section:nth-child(7)>div:nth-child(3)>a>img{
+    position: relative;
+    display: inline-block;
+    top: 38px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+body>main>footer{
+    position: relative;
+    bottom: -600px;
+}
+
