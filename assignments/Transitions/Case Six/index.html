@@ -40,7 +40,7 @@
             z-index: 1;
             background-image: url("../assests/Car_Animation_Img/city.png");
             background-repeat: repeat-x;
-            animation: road 5s linear infinite;
+            animation: road 7s linear infinite;
 
 
         }
@@ -49,7 +49,7 @@
             position: absolute;
             display: inline-block;
             bottom: 0;
-            animation: road 5s linear infinite;
+            animation: road 7s linear infinite;
             background-repeat: repeat-x;
 
         }
@@ -97,7 +97,7 @@
             width: 85px;
             left: 45px;
             bottom: 15px;
-            animation: wheels_car 6s linear infinite;
+            animation: wheels_car 3s linear infinite;
 
         }
         body > section > div:nth-child(3) > div:nth-child(3)>img {
@@ -105,15 +105,15 @@
             left: 352px;
             width: 85px;
             bottom: 15px;
-            animation: wheels_car 6s linear infinite;
+            animation: wheels_car 3s linear infinite;
         }
 
         @keyframes wheels_car {
-            0% {
+            /*0% {
                 transform: rotate(0deg);
-            }
+            }*/
             100% {
-                transform: rotate(360deg);
+                transform: rotate(-360deg);
             }
         }
     </style>
