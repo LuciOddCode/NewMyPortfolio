@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Transitions/Case Six/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Transitions/Case Six/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/Transitions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Working/css/FrameWork/CSS-Frameworks" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -138,7 +137,8 @@
       <workItem from="1683765999458" duration="17543000" />
       <workItem from="1683858233777" duration="3355000" />
       <workItem from="1683861644616" duration="8989000" />
-      <workItem from="1683873283007" duration="229000" />
+      <workItem from="1683873283007" duration="1004000" />
+      <workItem from="1683902812222" duration="525000" />
     </task>
     <servers />
   </component>
