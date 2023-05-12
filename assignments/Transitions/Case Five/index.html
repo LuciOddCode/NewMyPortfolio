@@ -2,116 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CaseFive</title>
-    <link href="../assests/normalize.css" rel="stylesheet">
-    <link href="../assests/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
-
+    <title>Slide Show Using CSS</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
     <style>
-
-        body {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        body>div{
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
-            height: 720px;
-            width: 1280px;
-            left: 200px;
+        main {
+            width: 800px;
+            height: 400px;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
             right: 0;
-            top: 50px;
+            top: 0;
+            bottom: 0;
             margin: auto;
+            overflow: hidden;
         }
 
-        @keyframes slide_animation {
-            0% {
-                left: 0px;
-            }
-            10% {
-                left: 0px;
-            }
-            20% {
-                left: 1280px;
-            }
-            30% {
-                left: 2560px;
-            }
-            40% {
-                left: 2560px;
-
-            }
-            50% {
-                left: 3840px;
-
-            }
-            60% {
-                left: 3840px;
-
-            }
-            70% {
-                left: 5120px;
-
-            }
-            80% {
-                left: 3840px;
-            }
-            90% {
-                left: 2560px;
-            }
-            95%{
-                left: 1280px;
-            }
-            100% {
-                left: 0;
-            }
-
-        }
-
-        body>div>div{
-            width: 5120px;
-            height: 720px;
-            margin: 0 0 0 -5120px;
-            position: relative;
-            animation: slide_animation ease-in-out;
-            animation-duration: 30s;
-            animation-direction: alternate;
+        main > section {
+            width: calc(100% * 4);
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 20s;
             animation-iteration-count: infinite;
-            animation-play-state: running;
-
+            animation-direction: alternate;
         }
 
-        body>div>div>div{
-            height: 720px;
-            width: 1280px;
-            position: relative;
-            float: left;
+        main > section > div {
+            height: 100%;
+            flex-grow: 1;
+        }
+
+        main > section > div:nth-child(1) {
+            background: url("../assests/imgForCaseFive/im lucifer text.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(2) {
+            background: url("../assests/imgForCaseFive/pata marusalamandara.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(3) {
+            background: url("../assests/imgForCaseFive/The Jump re coloured.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(4) {
+            background: url("../assests/imgForCaseFive/yellow man.jpg");
+            background-size: cover;
+            background-position: center;
         }
 
 
-    </style>
+
+        @keyframes slider {
+            0%{
+                transform: translateX(0);
+            }
+            33%{
+                transform: translateX(calc((100%/4)*-1));
+            }
+            66%{
+                transform: translateX(calc((100%/4)*-2));
+            }
+            100%{
+                transform: translateX(calc((100%/4)*-3));
+            }
+
+
+        }
+        </style>
 </head>
 <body>
-<div>
-    <div>
-        <div>
-            <img alt="imluci" height="100%" src="../assests/imgForCaseFive/im lucifer text.jpg" width="100%">
-        </div>
-        <div>
-            <img alt="" height="100%" src="../assests/imgForCaseFive/pata%20marusalamandara.jpg" width="100%">
-        </div>
-        <div>
-            <img alt="" height="100%" src="../assests/imgForCaseFive/The%20Jump%20re%20coloured.jpg" width="100%">
-        </div>
-        <div>
-            <img alt="" height="100%" src="../assests/imgForCaseFive/yellow%20man.jpg" width="100%">
-        </div>
-    </div>
-</div>
-
-
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
 
 </body>
 </html>
