@@ -12,6 +12,7 @@
             top: 50px;
             height: 720px;
             width: 100%;
+
             z-index: -1;
         }
 
@@ -21,6 +22,7 @@
             height: 720px;
             width: 100%;
             margin: auto;
+            overflow: hidden;
 
         }
         body>section>div:nth-child(2)>div:nth-child(3){
@@ -31,18 +33,90 @@
         }
         body>section>div:nth-child(2)>div:nth-child(1){
             position: absolute;
-            display: inline-block;
+            height: 250px;
+            width: 500%;
+            display: block;
             bottom: 300px;
+            z-index: 1;
+            background-image: url("../assests/Car_Animation_Img/city.png");
+            background-repeat: repeat-x;
+            animation: road 5s linear infinite;
+
 
         }
+
         body>section>div:nth-child(2)>div:nth-child(2){
             position: absolute;
             display: inline-block;
-            bottom: 300px;
-            left: 1416px;
+            bottom: 0;
+            animation: road 5s linear infinite;
+            background-repeat: repeat-x;
 
         }
 
+        @keyframes road {
+            100%{
+                transform: translateX(-1400px);
+            }
+        }
+
+        body>section>div:nth-child(3){
+            position: absolute;
+            display: inline-block;
+            left: 25%;
+            bottom: 200px;
+            z-index: 10;
+        }
+        /*body>section>div:nth-child(3)>img:nth-child(1){
+            position: absolute;
+
+        }*/
+
+        .car img{
+
+            width: 50%;
+            bottom: 100px;
+            animation: car 1s linear infinite;
+
+        }
+
+        @keyframes car {
+            100%{
+                transform: translateY(-1px);
+            }
+            50%{
+                transform: translateY(1px);
+            }
+            0%{
+                transform: translateY(-1px);
+            }
+        }
+
+        body>section>div:nth-child(3)>div:nth-child(2){
+                position: absolute;
+            width: 170px;
+            left: 45px;
+            bottom: 15px;
+
+        }
+        body>section>div:nth-child(3)>div:nth-child(3){
+            position: absolute;
+            left: 352px;
+            width: 170px;
+            bottom: 15px;
+            animation: wheels_car 1s linear infinite;
+            z-index: 2;
+           /* transform: rotate(360deg);*/
+
+        }
+
+        @keyframes wheels_car {
+
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
 
     </style>
 </head>
@@ -55,15 +129,19 @@
     </div>
     <div>
         <!--road and city-->
-        <div><img src="../assests/Car_Animation_Img/city.png" alt="city"></div>
-        <div><img src="../assests/Car_Animation_Img/city.png" alt="city"></div>
+        <div><!--<img src="../assests/Car_Animation_Img/city.png" alt="city">--></div>
         <div><img src="../assests/Car_Animation_Img/road.jpg" alt="city"></div>
     </div>
 
-    <div>
+    <div CLASS="car">
         <!--vehicle div-->
-        <div><!--left wheel--></div>
-        <div><!--right wheel--></div>
+        <img src="../assests/Car_Animation_Img/car.png" alt="">
+        <div><!--left wheel-->
+            <img src="../assests/Car_Animation_Img/wheel.png" alt="">
+        </div>
+        <div><!--right wheel-->
+            <img src="../assests/Car_Animation_Img/wheel.png" alt="">
+        </div>
     </div>
 
 </section>
