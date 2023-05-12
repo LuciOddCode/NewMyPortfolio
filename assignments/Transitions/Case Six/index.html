@@ -92,32 +92,30 @@
             }
         }
 
-        body>section>div:nth-child(3)>div:nth-child(2){
+        body>section>div:nth-child(3)>div:nth-child(2)>img{
                 position: absolute;
-            width: 170px;
+            width: 85px;
             left: 45px;
             bottom: 15px;
+            animation: wheels_car 6s linear infinite;
 
         }
-        body>section>div:nth-child(3)>div:nth-child(3){
+        body > section > div:nth-child(3) > div:nth-child(3)>img {
             position: absolute;
             left: 352px;
-            width: 170px;
+            width: 85px;
             bottom: 15px;
-            animation: wheels_car 1s linear infinite;
-            z-index: 2;
-           /* transform: rotate(360deg);*/
-
+            animation: wheels_car 6s linear infinite;
         }
 
         @keyframes wheels_car {
-
-            100%{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
                 transform: rotate(360deg);
             }
-
         }
-
     </style>
 </head>
 <body>

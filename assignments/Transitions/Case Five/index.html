@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <style>
         main {
-            width: 800px;
-            height: 400px;
+            width: 98vw;
+            height: 100vh;
             border: 2px solid black;
             position: absolute;
             left: 0;
@@ -60,16 +60,16 @@
 
 
         @keyframes slider {
-            0%{
+            0%,15%{
                 transform: translateX(0);
             }
-            33%{
+            33%,48%{
                 transform: translateX(calc((100%/4)*-1));
             }
-            66%{
+            66%,81%{
                 transform: translateX(calc((100%/4)*-2));
             }
-            100%{
+            85%,100%{
                 transform: translateX(calc((100%/4)*-3));
             }
 
