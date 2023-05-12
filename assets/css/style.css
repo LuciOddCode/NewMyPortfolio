@@ -8,7 +8,7 @@ section{
 
 main{
     position: relative;
-    height: 610vh;
+    height: 600vh;
     width: 98vw;
 
 }
@@ -34,7 +34,7 @@ body>main>header>p{
     margin: auto;
 }
 body>main>header>p>span{
-    color: red;
+    color: #FF2400;
 }
 
 
@@ -68,7 +68,7 @@ body>main>section{
 }
 /*Landing page first potion (introduction)*/
 body>main>section:nth-child(2) span{
-    color: red;
+    color: #FF2400;
 }
 body>main>section:nth-child(2)>p:nth-child(1){
     position: absolute;
@@ -132,8 +132,11 @@ body>main>section:nth-child(3)>div {
     position: relative;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    top: 100px;
-    left: 50px;
+    width: 88vw;
+    height: 300px;
+    top: 150px;
+    bottom: 0;
+    left: 0;
     right: 0;
     margin: auto;
 }
@@ -141,10 +144,11 @@ body>main>section:nth-child(3)>div {
 body>main>section:nth-child(3)>div figure{
     position: relative;
     display: inline-block;
-    top: 150px;
-    margin: 0;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
 
 }
 
@@ -310,13 +314,16 @@ body>main>section:nth-child(6)>nav>menu>div>a{
 }
 
 body>main>section:nth-child(7){
-    top: 300px;
+    display: flex;
+    top: 100px;
+    flex-direction: column;
 }
 
 body>main>section:nth-child(7)>p:nth-child(1){
     position: relative;
     display: inline;
     top: 50px;
+    width: 98vw;
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
@@ -324,18 +331,20 @@ body>main>section:nth-child(7)>p:nth-child(1){
 }
 
 body>main>section:nth-child(7)>p:nth-child(1)>span{
-    color: red;
+    color: #FF2400;
 }
 
 body>main>section:nth-child(7)>div:nth-child(2){
-    position: absolute;
-    display: block;
-    width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
     height: 50vh;
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Paytone One', monospace;
-    left: 60%;
+    left: 50%;
     top: 20%;
 }
 body>main>section:nth-child(7)>div:nth-child(2)>div{
@@ -343,8 +352,42 @@ body>main>section:nth-child(7)>div:nth-child(2)>div{
     width: 500px;
 }
 
-body>main>section:nth-child(7)>div:nth-child(2)>label:after>input{
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(1)>label{
+    padding-right: 50px;
+}
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(2)>label{
+    padding-right: 45px;
+}
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(3)>label{
+    padding-right: 28px;
+}
 
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(3)>input{
+    height: 200px;
+}
+
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(4){
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 30px;
+    left: 250px;
+    margin: auto;
+}
+
+body>main>section:nth-child(7)>div:nth-child(2)>div:nth-child(4)>input{
+    color: white;
+    background-color: #5ae509;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: #c4ff16 2px 2px 2px 2px;
+}
+body>main>section:nth-child(7)>div:nth-child(2)>div>input:nth-child(2){
+    background: #d9ff9c;
+    border: none;
+    width: 100%;
 }
 body>main>section:nth-child(7)>div:nth-child(3) {
     position: relative;
@@ -352,11 +395,13 @@ body>main>section:nth-child(7)>div:nth-child(3) {
     width: 438px;
     height: 88px;
     left: 0;
+    top: -200px;
 }
 body>main>section:nth-child(7)>div:nth-child(3)>a{
     position: relative;
     display: block;
     width: 438px;
+    height: 88px;
 }
 body>main>section:nth-child(7)>div:nth-child(3)>a>input{
     position: relative;
@@ -374,20 +419,28 @@ body>main>section:nth-child(7)>div:nth-child(3)>a>input{
 
 body>main>section:nth-child(7)>div:nth-child(3)>i{
     position: relative;
-    display: inline;
+    display: inline-block;
     font-size: 50px;
-    bottom: 0;
+    width: 438px;
+    height: 88px;
+    text-align: right;
+    top: -70px;
+    left: 80px;
+    color: white;
+
 
 }
 
+
 body>main>section:nth-child(7)>p:nth-child(4){
     position: relative;
-    display: inline;
-    left: 0;
+    display: inline-block;
+    left: 300px;
+    width: fit-content;
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Paytone One', monospace;
-    top: 100px;
+    bottom: 100px;
 }
 
 body>main>section:nth-child(7)>div:nth-child(5){
@@ -396,7 +449,7 @@ body>main>section:nth-child(7)>div:nth-child(5){
     width: 40vw;
     height: 50px;
     left: 100px;
-    bottom: 0;
+    bottom: 50px;
 }
 
 body>main>section:nth-child(7)>div:nth-child(5)>figure{
