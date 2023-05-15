@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
+      <change afterPath="$PROJECT_DIR$/assets/css/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/education.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/gallery.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Transitions/Case Five/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Transitions/Case Five/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/education.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gallery.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -50,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Working/css/FrameWork/CSS-Frameworks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -60,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assets\img" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions\Case Three" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions\Case Two" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\css\Transitions\Case One" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\css\CaseFiveAndSix\assests\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions" />
@@ -140,6 +148,11 @@
       <workItem from="1683861644616" duration="8989000" />
       <workItem from="1683873283007" duration="1004000" />
       <workItem from="1683902812222" duration="6178000" />
+      <workItem from="1683954815026" duration="35000" />
+      <workItem from="1683981643237" duration="3501000" />
+      <workItem from="1684123748766" duration="4173000" />
+      <workItem from="1684131295863" duration="3437000" />
+      <workItem from="1684153941526" duration="10813000" />
     </task>
     <servers />
   </component>
