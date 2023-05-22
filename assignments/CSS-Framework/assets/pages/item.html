@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
+    <title>Item</title>
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+
+
+</head>
+<body class="container-xxl">
+<!--navigation Bar-->
+<nav class="navbar navbar-expand-lg bg-warning fixed-top bg-opacity-75">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-light" href="#">Metropolitan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item ">
+                    <a class="nav-link active text-light" aria-current="page" href="/assignments/CSS-Framework/payment.html">Purchase</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="orders.html">Orders</a>
+                </li>
+            </ul>
+            <span class="navbar-text ">
+        <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="">Log-Out</a>
+      </span>
+        </div>
+    </div>
+</nav>
+<!--Where Gonna code make a purchase page-->
+<section class="container-xxl bg-warning-subtle pt-5 ">
+    <div class=" row">
+<!--        empty row-->
+        <p></p>
+    </div>
+    <!--first row-->
+    <div class=" row">
+        <h4 class="col-xs-12 col-sm-12 col-md-10 ">Stock Management</h4>
+        <h5 class="col-xs-12 col-sm-12 col-md-2 ">Next Item Code : </h5>
+    </div>
+
+    <!--second row search-->
+    <div class="row">
+        <div class=" col-4 input-group mb-3">
+            <input aria-describedby="button-addon2" aria-label="Recipient's username" class="col-4 form-control"
+                   placeholder="Search Item"
+                   type="text">
+            <button class="btn btn-outline-secondary" id="button-addon2" type="button">Search</button>
+        </div>
+    </div>
+    <!--Third row - Fields-->
+    <div class="row">
+        <div class="row g-3 justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Name" class="form-control " placeholder="Description" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Address" class="form-control" placeholder="Brand" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Email" class="form-control" placeholder="Unit Price" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Telephone" class="form-control" placeholder="Quantity" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-1">
+                <button class="btn btn-success" type="button">Add</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Fourth row - Table and Amount-->
+
+    <div class="row pt-5">
+        <div class="col-12">
+            <table class=" table table-striped-columns " id="myTable">
+                <thead class="col-12 bg-danger-subtle">
+                <tr class="col-12">
+                    <th scope="col">#</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Qty:</th>
+                    <th scope="col" >Button</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>I00-001</td>
+                    <td>Ram 4GB</td>
+                    <td>Dell</td>
+                    <td>Rs.4000.00</td>
+                    <td>14</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>I00-002</td>
+                    <td>Ram 8GB</td>
+                    <td>Dell</td>
+                    <td>Rs.6500.00</td>
+                    <td>12</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>I00-003</td>
+                    <td>Monitor</td>
+                    <td>Samsung</td>
+                    <td>Rs.16000.00</td>
+                    <td>3</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>I00-004</td>
+                    <td>Mouse-RGB</td>
+                    <td>Razor</td>
+                    <td>Rs.4000.00</td>
+                    <td>9</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<script src="../js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>

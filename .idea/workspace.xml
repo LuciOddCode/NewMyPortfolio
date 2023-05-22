@@ -2,17 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change afterPath="$PROJECT_DIR$/assets/css/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/education.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/pages/customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/pages/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/pages/orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/assets/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/CSS-Framework/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/index.html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/index.html.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Transitions/Case Five/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Transitions/Case Five/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/education.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.htaccess" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +99,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/CSS-Framework/assets/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -68,13 +111,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets\pages" />
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assets\img" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions\Case Three" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions\Case Two" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\css\Transitions\Case One" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets" />
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets\table" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\MyPortfolio\assets\docs\contactme" />
@@ -152,7 +197,18 @@
       <workItem from="1683981643237" duration="3501000" />
       <workItem from="1684123748766" duration="4173000" />
       <workItem from="1684131295863" duration="3437000" />
-      <workItem from="1684153941526" duration="10813000" />
+      <workItem from="1684153941526" duration="11480000" />
+      <workItem from="1684195624918" duration="103000" />
+      <workItem from="1684208281230" duration="2717000" />
+      <workItem from="1684252908946" duration="63000" />
+      <workItem from="1684253082492" duration="607000" />
+      <workItem from="1684324339283" duration="5723000" />
+      <workItem from="1684463721876" duration="97000" />
+      <workItem from="1684463862899" duration="95000" />
+      <workItem from="1684594840120" duration="2150000" />
+      <workItem from="1684626921648" duration="592000" />
+      <workItem from="1684670426269" duration="7214000" />
+      <workItem from="1684734730425" duration="7039000" />
     </task>
     <servers />
   </component>

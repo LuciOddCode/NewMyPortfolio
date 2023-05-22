@@ -1,3 +1,0 @@
-<FilesMatch "\.(jpg|jpeg|png|gif)$">
-  Header set Cache-Control "max-age=3600"
-</FilesMatch>

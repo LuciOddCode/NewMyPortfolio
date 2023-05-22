@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
+    <title>Customer</title>
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+
+
+</head>
+<body class="container-xxl">
+<!--navigation Bar-->
+<nav class="navbar navbar-expand-lg bg-danger fixed-top bg-o">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-light" href="#">Metropolitan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item ">
+                    <a class="nav-link active text-light" aria-current="page" href="/assignments/CSS-Framework/payment.html">Purchase</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="orders.html">Orders</a>
+                </li>
+            </ul>
+            <span class="navbar-text ">
+        <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="">Log-Out</a>
+      </span>
+        </div>
+    </div>
+</nav>
+<!--Where Gonna code make a purchase page-->
+<section class="container-xxl bg-danger-subtle pt-5 ">
+    <div class=" row">
+<!--        empty row-->
+        <p></p>
+    </div>
+    <!--first row-->
+    <div class=" row">
+        <h4 class="col-xs-12 col-sm-12 col-md-10 ">Manage Customer</h4>
+        <h5 class="col-xs-12 col-sm-12 col-md-2 ">Next Cus ID : </h5>
+    </div>
+
+    <!--second row search-->
+    <div class="row">
+        <div class=" col-4 input-group mb-3">
+            <input aria-describedby="button-addon2" aria-label="Recipient's username" class="col-4 form-control"
+                   placeholder="Search Customer"
+                   type="text">
+            <button class="btn btn-outline-secondary" id="button-addon2" type="button">Search</button>
+        </div>
+    </div>
+    <!--Third row - Fields-->
+    <div class="row">
+        <div class="row g-3 justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Name" class="form-control" placeholder="Name" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Address" class="form-control" placeholder="Address" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Email" class="form-control" placeholder="Email" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="Telephone" class="form-control" placeholder="Telephone" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <input aria-label="DOB" class="form-control" placeholder="DOB-DD/MM/YYYY" type="text">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-1">
+                <button class="btn btn-success" type="button">Add</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Fourth row - Table and Amount-->
+
+    <div class="row pt-5">
+        <div class="col-12">
+            <table class=" table table-striped-columns" id="myTable">
+                <thead class="col-12">
+                <tr class="col-12">
+                    <th scope="col">#</th>
+                    <th scope="col">Cus ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col" >Button</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>C00-001</td>
+                    <td>Rusiru</td>
+                    <td>Galle</td>
+                    <td>dasanaya@gmail.com</td>
+                    <td>0766923644</td>
+                    <td>20.12.2023</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>C00-002</td>
+                    <td>Rusiru</td>
+                    <td>Galle</td>
+                    <td>dasanaya@gmail.com</td>
+                    <td>0766923644</td>
+                    <td>20.12.2023</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C00-003</td>
+                    <td>Rusiru</td>
+                    <td>Galle</td>
+                    <td>dasanaya@gmail.com</td>
+                    <td>0766923644</td>
+                    <td>20.12.2023</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>C00-004</td>
+                    <td>Rusiru</td>
+                    <td>Galle</td>
+                    <td>dasanaya@gmail.com</td>
+                    <td>0766923644</td>
+                    <td>20.12.2023</td>
+                    <td>
+                        <Button class="btn btn-outline-danger">Delete</Button>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<script src="../js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
