@@ -7,7 +7,7 @@
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <link href="/assets/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link href="assets/styles.css" rel="stylesheet">
 
 
 </head>
@@ -16,22 +16,23 @@
 <nav class="navbar navbar-expand-lg bg-success fixed-top">
     <div class="container-fluid ">
         <a class="navbar-brand text-light" href="#">Metropolitan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item ">
-                    <a id="btnPurchase" class="nav-link active text-light" aria-current="page" href="#">Purchase</a>
+                    <a aria-current="page" class="nav-link active text-light" href="#" id="btnPurchase">Purchase</a>
                 </li>
                 <li class="nav-item">
-                    <a id="btnCustomer" class="nav-link text-light" href="#customer">Customer</a>
+                    <a class="nav-link text-light" href="#customer" id="btnCustomer">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a id="btnItem" class="nav-link text-light" href="#item">Item</a>
+                    <a class="nav-link text-light" href="#item" id="btnItem">Item</a>
                 </li>
                 <li class="nav-item">
-                    <a id="btnOrders" class="nav-link text-light" href="#order">Orders</a>
+                    <a class="nav-link text-light" href="#order" id="btnOrders">Orders</a>
                 </li>
             </ul>
             <span class="navbar-text ">
@@ -41,9 +42,9 @@
     </div>
 </nav>
 <!--Where Gonna code make a purchase page-->
-<section id="payment" class="container-xxl bg-success-subtle pt-5 ">
+<section class="container-xxl bg-success-subtle pt-5 " id="payment">
     <div class=" row">
-<!--        empty row-->
+        <!--        empty row-->
         <p></p>
     </div>
     <!--first row-->
@@ -65,19 +66,21 @@
     <div class="row">
         <div class="row g-3 justify-content-center">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Item Code" class="form-control" placeholder="Item Code" type="text">
+                <input aria-label="Item Code" class="form-control" id="purItemCode" placeholder="Item Code" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Description" class="form-control" placeholder="Description" type="text">
+                <input aria-label="Description" class="form-control" id="purItemSesc" placeholder="Description"
+                       type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Unit Price" class="form-control" placeholder="Unit Price" type="text">
+                <input aria-label="Unit Price" class="form-control" id="purItemUPrice" placeholder="Unit Price"
+                       type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Qty" class="form-control" placeholder="Qty" type="text">
+                <input aria-label="Qty" class="form-control" id="purItemQty" placeholder="Qty" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-1">
-                <button class="btn btn-success" type="button">Add</button>
+                <button class="btn btn-success" id="purItemBtnAdd" type="button">Add</button>
             </div>
 
         </div>
@@ -96,10 +99,10 @@
                     <th scope="col">Unit Price</th>
                     <th scope="col">Qty</th>
                     <th scope="col">Price</th>
-                    <th scope="col" >Button</th>
+                    <th scope="col">Button</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="purTBody">
                 <tr>
                     <th scope="row">1</th>
                     <td>956010</td>
@@ -137,7 +140,7 @@
 
 <!--Where we gonna put Customer Section-->
 
-<section id="customer" class="container-xxl bg-danger-subtle pt-5 ">
+<section class="container-xxl bg-danger-subtle pt-5 " id="customer">
     <div class=" row">
         <!--        empty row-->
         <p></p>
@@ -161,7 +164,7 @@
     <div class="row">
         <div class="row g-3 justify-content-center">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input id aria-label="Name" class="form-control" placeholder="Name" type="text">
+                <input aria-label="Name" class="form-control" id placeholder="Name" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <input aria-label="Address" class="form-control" placeholder="Address" type="text">
@@ -196,7 +199,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                     <th scope="col">DOB</th>
-                    <th scope="col" >Button</th>
+                    <th scope="col">Button</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -261,7 +264,7 @@
 
 <!--This is where we gonna put our Item section-->
 
-<section id="item" class="container-xxl bg-warning-subtle pt-5 ">
+<section class="container-xxl bg-warning-subtle pt-5 " id="item">
     <div class=" row">
         <!--        empty row-->
         <p></p>
@@ -316,7 +319,7 @@
                     <th scope="col">Brand</th>
                     <th scope="col">Unit Price</th>
                     <th scope="col">Qty:</th>
-                    <th scope="col" >Button</th>
+                    <th scope="col">Button</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -377,7 +380,7 @@
 
 <!--This is where we are going to put our Manage Order section-->
 
-<section id="order" class="container-xxl bg-primary-subtle pt-5">
+<section class="container-xxl bg-primary-subtle pt-5" id="orders">
     <div class=" row">
         <!--        empty row-->
         <p></p>
@@ -434,8 +437,8 @@
                     <th scope="col">Customer ID</th>
                     <th scope="col">Net Value</th>
                     <th scope="col">Date</th>
-                    <th scope="col" >Button</th>
-                    <th scope="col" >Button</th>
+                    <th scope="col">Button</th>
+                    <th scope="col">Button</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -490,34 +493,57 @@
 </section>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
-    document.getElementById("btnPurchase").addEventListener("click",function (){
-        document.getElementById("payment").style.display = "grid";
-        document.getElementById("customer").style.display = "none";
-        document.getElementById("item").style.display = "none";
-        document.getElementById("order").style.display = "none";
+    $("#btnPurchase").click(function () {
+        $('#payment').css("display", "grid");
+        $('#customer').css("display", "none");
+        $('#item').css("display", "none");
+        $('#orders').css("display", "none");
+    });
+
+    $("#btnCustomer").click(function () {
+        $('#payment').css("display", "none");
+        $('#customer').css("display", "grid");
+        $('#item').css("display", "none");
+        $('#orders').css("display", "none");
     })
 
-    document.getElementById("btnCustomer").addEventListener("click",function (){
-        document.getElementById("payment").style.display = "none";
-        document.getElementById("customer").style.display = "grid";
-        document.getElementById("item").style.display = "none";
-        document.getElementById("order").style.display = "none";
+    $("#btnItem").click(function () {
+        $('#payment').css("display", "none");
+        $('#customer').css("display", "none");
+        $('#item').css("display", "grid");
+        $('#orders').css("display", "none");
     })
 
-    document.getElementById("btnItem").addEventListener("click",function (){
-        document.getElementById("payment").style.display = "none";
-        document.getElementById("customer").style.display = "none";
-        document.getElementById("item").style.display = "grid";
-        document.getElementById("order").style.display = "none";
+    $("#btnOrders").click(function () {
+        $('#payment').css("display", "none");
+        $('#customer').css("display", "none");
+        $('#item').css("display", "none");
+        $('#orders').css("display", "grid");
     })
 
-    document.getElementById("btnOrders").addEventListener("click",function (){
-        document.getElementById("payment").style.display = "none";
-        document.getElementById("customer").style.display = "none";
-        document.getElementById("item").style.display = "none";
-        document.getElementById("order").style.display = "grid";
+
+    /*For Purchase page*/
+    $("purItemBtnAdd").click(function () {
+
+
+        let code = $("<td></td>").appendChild($('#purItemCode').val());
+        let desc = $("<td></td>").append($('#purItemCode').val());
+        let unit = $("<td></td>").append($('#purItemCode').val());
+        let qty = $("<td></td>").append($('#purItemCode').val());
+
+        let purTr = $("<tr></tr>>");
+        purTr.appendChild(code);
+        purTr.appendChild(desc);
+        purTr.appendChild(unit);
+        purTr.appendChild(qty);
+        purTr.appendChild($);
+
+        $('purTBody').appendChild(purTr);
     })
+
+
 </script>
 
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptQue</title>
+    <style>
+        section{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            display: flex;
+            height: 320px;
+            width: 1000px;
+            border: 2px solid red;
+            align-items: center;
+        }
+        section>div{
+            border: 2px solid green;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+    section>div:nth-child(1){
+        align-self: start;
+    }
+
+        section>div:nth-child(6){
+            align-self: end;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Java Script Queue</h1>
+<section>
+    <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    <div></div>
+</section>
+
+<script>
+    let colors=["red","yellow","green","blue","deeppink","orange"];
+    let allDiv =document.querySelector("section").children;
+
+
+    setInterval(function (){
+
+        for (let i = 0; i < allDiv.length; i++) {
+            allDiv[i].style.backgroundColor=colors[i];
+        }
+        let lastColor=colors.pop();
+        colors.unshift(lastColor)
+    },400);
+
+
+
+
+</script>
+</body>
+</html>

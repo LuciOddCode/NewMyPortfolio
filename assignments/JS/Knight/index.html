@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            background: black;
+            width: 98%;
+            height: 100vh;
+        }
+        section:nth-child(1){
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            height: 50px;
+            justify-content: center;
+            background: black;
+
+            left: 0;
+            right: 0;
+            top:200px;
+            margin: auto;
+
+        }
+        section:nth-child(2){
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            height: 50px;
+            justify-content: center;
+            background: black;
+
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            border: 2px solid white;
+        }
+        button{
+            width: 80px;
+            height: 50px;
+            background: #0a58ca;
+            color: white;
+            border-radius: 20px;
+            border: none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section>
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+</section>
+
+
+
+
+
+<script src="jquery-3.7.0.min.js"></script>
+<script>
+    $("#btnStart").click()
+</script>
+</body>
+
+</html>

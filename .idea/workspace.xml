@@ -2,54 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/assets/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/SPA/payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Cal/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Cal/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Queue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/index.html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/index.html.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/SPA/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,21 +106,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS\SPA\assets\js" />
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS" />
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Knight" />
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Cal" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets\pages" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assets\img" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\Transitions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets" />
@@ -213,6 +222,16 @@
       <workItem from="1684990692479" duration="50000" />
       <workItem from="1685017064286" duration="56000" />
       <workItem from="1685017194265" duration="4409000" />
+      <workItem from="1685087808733" duration="256000" />
+      <workItem from="1685095758051" duration="124000" />
+      <workItem from="1685590574721" duration="6197000" />
+      <workItem from="1686025203900" duration="13385000" />
+      <workItem from="1686092193504" duration="2096000" />
+      <workItem from="1686103893857" duration="45000" />
+      <workItem from="1686103972447" duration="5419000" />
+      <workItem from="1686109583832" duration="603000" />
+      <workItem from="1686114450631" duration="12000" />
+      <workItem from="1686116515708" duration="2268000" />
     </task>
     <servers />
   </component>
@@ -235,5 +254,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added all pages" />
     <option name="LAST_COMMIT_MESSAGE" value="added all pages" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
