@@ -32,7 +32,7 @@
                     <a class="nav-link text-light" href="#item" id="btnItem">Item</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#order" id="btnOrders">Orders</a>
+                    <a class="nav-link text-light" href="#order" id="btnNavOrder">Orders</a>
                 </li>
             </ul>
             <span class="navbar-text ">
@@ -380,7 +380,7 @@
 
 <!--This is where we are going to put our Manage Order section-->
 
-<section class="container-xxl bg-primary-subtle pt-5" id="orders">
+<section class="container-xxl bg-primary-subtle pt-5" id="ordersSec">
     <div class=" row">
         <!--        empty row-->
         <p></p>
@@ -495,57 +495,77 @@
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
+    let thVal=0;
     $("#btnPurchase").click(function () {
         $('#payment').css("display", "grid");
         $('#customer').css("display", "none");
         $('#item').css("display", "none");
-        $('#orders').css("display", "none");
+        $('#ordersSec').css("display", "none");
     });
 
     $("#btnCustomer").click(function () {
         $('#payment').css("display", "none");
         $('#customer').css("display", "grid");
         $('#item').css("display", "none");
-        $('#orders').css("display", "none");
+        $('#ordersSec').css("display", "none");
     })
 
     $("#btnItem").click(function () {
         $('#payment').css("display", "none");
         $('#customer').css("display", "none");
         $('#item').css("display", "grid");
-        $('#orders').css("display", "none");
+        $('#ordersSec').css("display", "none");
     })
 
-    $("#btnOrders").click(function () {
+    $("#btnNavOrder").click(function () {
         $('#payment').css("display", "none");
         $('#customer').css("display", "none");
         $('#item').css("display", "none");
-        $('#orders').css("display", "grid");
+        $('#ordersSec').css("display", "grid");
     })
 
 
-    /*For Purchase page*/
-    $("purItemBtnAdd").click(function () {
 
-
-        let code = $("<td></td>").appendChild($('#purItemCode').val());
-        let desc = $("<td></td>").append($('#purItemCode').val());
-        let unit = $("<td></td>").append($('#purItemCode').val());
-        let qty = $("<td></td>").append($('#purItemCode').val());
-
-        let purTr = $("<tr></tr>>");
-        purTr.appendChild(code);
-        purTr.appendChild(desc);
-        purTr.appendChild(unit);
-        purTr.appendChild(qty);
-        purTr.appendChild($);
-
-        $('purTBody').appendChild(purTr);
-    })
 
 
 </script>
+<script>
+    /*For Purchase page*/
 
+    $("#purItemBtnAdd").click(function () {
+
+
+        let code = $('#purItemCode').val();
+        let desc = $('#purItemCode').val();
+        let unit = $('#purItemCode').val();
+        let qty =  $('#purItemCode').val();
+
+        thVal++;
+
+        let thNo="<td>"+thVal+"</td>";
+        let tdCode="<td>"+code+"</td>";
+        let tdDesc="<td>"+desc+"</td>";
+        let tdUnit="<td>"+unit+"</td>";
+        let tdQty="<td>"+qty+"</td>";
+        let tdPrice="<td>"+unit*code+"</td>";
+        let tdButton="<button>Delete</button>";
+
+        let row=$("<tr></tr>>");
+
+        row.append(thNo);
+        row.append(tdCode);
+        row.append(tdDesc);
+        row.append(tdUnit);
+        row.append(tdQty);
+        row.append(tdPrice);
+        row.append(tdButton);
+
+        let purBody =$("#purTBody");
+
+        purBody.append(row);
+
+    });
+</script>
 
 </body>
 </html>
