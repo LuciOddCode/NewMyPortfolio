@@ -6,14 +6,31 @@
     <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <style>
-        body{
+        body {
             display: flex;
             flex-direction: column;
             background: black;
             width: 98%;
             height: 100vh;
         }
-        section:nth-child(1){
+
+        section:nth-child(1) {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            height: 50px;
+            justify-content: center;
+            background: black;
+            color: red;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+
+        }
+
+        section:nth-child(2) {
             position: relative;
             display: flex;
             flex-direction: row;
@@ -24,11 +41,11 @@
 
             left: 0;
             right: 0;
-            top:200px;
             margin: auto;
 
         }
-        section:nth-child(2){
+
+        section:nth-child(3) {
             position: relative;
             display: flex;
             flex-direction: row;
@@ -42,12 +59,14 @@
             margin: auto;
 
         }
-        div{
+
+        div {
             width: 100px;
             height: 50px;
             border: 2px solid white;
         }
-        button{
+
+        button {
             width: 80px;
             height: 50px;
             background: #0a58ca;
@@ -62,6 +81,10 @@
 <body>
 
 <section>
+    <h1>Knight Rider</h1>
+</section>
+
+<section id="lights">
     <div></div>
     <div></div>
     <div></div>
@@ -73,15 +96,49 @@
 <section>
     <button id="btnStart">Start</button>
     <button id="btnStop">Stop</button>
+    <audio src="audios/Kitt%20Scanner%20-%20Sound%20Effect.mp3" controls autoplay loop></audio>
+    <audio src="audios/Stu%20Phillips%20-%20Knight%20Rider%20(Original%20Television%20Soundtrack)%20(Theme%20Song).mp3" controls autoplay loop></audio>
 </section>
-
-
-
 
 
 <script src="jquery-3.7.0.min.js"></script>
 <script>
-    $("#btnStart").click()
+    let timer;
+    let timeout;
+    $("#btnStart").click(function () {
+        let colors = [ "#FF0000", "#FF3333", "#FF6666"
+            , "#FF9999", "#FFCCCC", "#FFE5E5","#fffff"];
+        let lights = $("#lights").children();
+
+
+        clearInterval(timer);
+        timer = setInterval(function () {
+            for (let i = 0; i < lights.length; i++) {
+                $(lights[i]).css('background-color', colors[i]);
+            }
+            let lastColor = colors.pop();
+            colors.unshift(lastColor);
+
+            for (let i = lights.length; i > 0; i--) {
+                $(lights[i]).css('background-color', colors[i]);
+            }
+            lastColor = colors.pop();
+            colors.unshift(lastColor);
+            /*clearTimeout(timeout);
+            timeout=setTimeout(function () {
+                for (let i = lights.length; i > 0; i--) {
+                    $(lights[i]).css('background-color', "white");
+                }
+            }, 600);*/
+        },300);
+
+
+    })
+
+    $("#btnStop").click(function () {
+        clearInterval(timer);
+        /*clearTimeout(timeout);*/
+    })
 </script>
 </body>
 

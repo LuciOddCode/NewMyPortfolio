@@ -111,41 +111,46 @@
             color: white;
         }
     </style>
+
 </head>
 <body>
 <section>
     <div>
-        <div>c</div>
-        <div><input type="text"></div>
+        <div id="c">c</div>
+        <div ><input id="text" type="text"></div>
     </div>
     <div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>+</div>
+        <div id="7">7</div>
+        <div id="8">8</div>
+        <div id="9">9</div>
+        <div id="plus">+</div>
     </div>
     <div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>-</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="minus">-</div>
     </div>
     <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>/</div>
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="divide">/</div>
     </div>
     <div>
-        <div>0</div>
-        <div>.</div>
-        <div>=</div>
-        <div>*</div>
+        <div id="zero">0</div>
+        <div id="period">.</div>
+        <div id="equal">=</div>
+        <div id="asterix">*</div>
     </div>
 </section>
 
-<script>
 
+<script src="../InMemory-POS/SPA/assets/js/jquery-3.7.0.min.js"></script>
+<script>
+    $("#c").click(function (){
+       $("#text").val(null);
+    });
 </script>
 </body>
 </html>

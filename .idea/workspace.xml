@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/audios/Kitt Scanner - Sound Effect.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/audios/Stu Phillips - Knight Rider (Original Television Soundtrack) (Theme Song).mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Cal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Cal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Knight/audios" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -175,7 +179,8 @@
       <workItem from="1686103972447" duration="5419000" />
       <workItem from="1686109583832" duration="603000" />
       <workItem from="1686114450631" duration="12000" />
-      <workItem from="1686116515708" duration="5846000" />
+      <workItem from="1686116515708" duration="12125000" />
+      <workItem from="1686149749090" duration="4937000" />
     </task>
     <servers />
   </component>

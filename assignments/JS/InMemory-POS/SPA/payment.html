@@ -104,15 +104,7 @@
                 </thead>
                 <tbody id="purTBody">
                 <tr>
-                    <th scope="row">1</th>
-                    <td>956010</td>
-                    <td>Omelette Bun</td>
-                    <td>90.00</td>
-                    <td>1</td>
-                    <td>90.00</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
+
                 </tr>
 
                 </tbody>
@@ -495,7 +487,7 @@
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
-    let thVal=0;
+
     $("#btnPurchase").click(function () {
         $('#payment').css("display", "grid");
         $('#customer').css("display", "none");
@@ -530,42 +522,125 @@
 
 </script>
 <script>
-    /*For Purchase page*/
+   /* let thVal=0;
+    /!*For Purchase page*!/
 
     $("#purItemBtnAdd").click(function () {
 
 
         let code = $('#purItemCode').val();
-        let desc = $('#purItemCode').val();
-        let unit = $('#purItemCode').val();
-        let qty =  $('#purItemCode').val();
+        let desc = $('#purItemSesc').val();
+        let unit = $('#purItemUPrice').val();
+        let qty =  $('#purItemQty').val();
+
+
 
         thVal++;
 
-        let thNo="<td>"+thVal+"</td>";
-        let tdCode="<td>"+code+"</td>";
-        let tdDesc="<td>"+desc+"</td>";
-        let tdUnit="<td>"+unit+"</td>";
-        let tdQty="<td>"+qty+"</td>";
-        let tdPrice="<td>"+unit*code+"</td>";
-        let tdButton="<button>Delete</button>";
 
-        let row=$("<tr></tr>>");
+        let row=`<tr>
+                    <th>${thVal}</th>
+                    <td>${code}</td>
+                    <td>${desc}</td>
+                    <td>${unit}</td>
+                    <td>${qty}</td>
+                    <td>${qty*unit}</td>
+                    <button class="btn btn-danger">Delete</button>
+                  </tr>`;
 
-        row.append(thNo);
-        row.append(tdCode);
-        row.append(tdDesc);
-        row.append(tdUnit);
-        row.append(tdQty);
-        row.append(tdPrice);
-        row.append(tdButton);
+
+
+        let purBody =$("#purTBody");
+
+        purBody.append(row);
+
+    });*/
+</script>
+
+<!--<script>
+    let thVal=0;
+
+    var customerDB =[];
+    /*For Purchase page*/
+
+    $("#purItemBtnAdd").click(function () {
+//to empty a table use $("t body id").empty(); function
+
+        let code = $('#purItemCode').val();
+        let desc = $('#purItemSesc').val();
+        let unit = $('#purItemUPrice').val();
+        let qty =  $('#purItemQty').val();
+
+        let customer =[code,desc,unit,qty,unit*qty];
+        customerDB.push(customer);
+
+        thVal++;
+
+
+
+        let row=`<tr>
+                    <th>${thVal}</th>
+                    <td>${code}</td>
+                    <td>${desc}</td>
+                    <td>${unit}</td>
+                    <td>${qty}</td>
+                    <td>${qty*unit}</td>
+                    <button class="btn btn-danger">Delete</button>
+                  </tr>`;
+
+
 
         let purBody =$("#purTBody");
 
         purBody.append(row);
 
     });
-</script>
 
+
+
+</script>-->
+<script>
+    let thVal=0;
+
+    var customerDB =[];
+    /*For Purchase page*/
+
+    $("#purItemBtnAdd").click(function () {
+//to empty a table use $("t body id").empty(); function
+
+
+        let customer ={
+            code: $('#purItemCode').val(),
+            desc: $('#purItemSesc').val(),
+            unit: $('#purItemUPrice').val(),
+            qty:  $('#purItemQty').val()
+        }
+        customerDB.push(customer);
+
+        thVal++;
+
+
+
+        let row=`<tr>
+                    <th>${thVal}</th>
+                    <td>${customer.code}</td>
+                    <td>${customer.desc}</td>
+                    <td>${customer.unit}</td>
+                    <td>${customer.qty}</td>
+                    <td>${customer.qty*customer.unit}</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                  </tr>`;
+
+
+
+        let purBody =$("#purTBody");
+
+        purBody.append(row);
+
+    });
+
+
+
+</script>
 </body>
 </html>
