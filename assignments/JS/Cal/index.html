@@ -112,6 +112,7 @@
         }
     </style>
 
+
 </head>
 <body>
 <section>
@@ -141,16 +142,24 @@
         <div id="zero">0</div>
         <div id="period">.</div>
         <div id="equal">=</div>
-        <div id="asterix">*</div>
+        <div id="asterisk">*</div>
     </div>
 </section>
 
 
-<script src="../InMemory-POS/SPA/assets/js/jquery-3.7.0.min.js"></script>
+<script src="jquery-3.7.0.min.js"></script>
 <script>
-    $("#c").click(function (){
-       $("#text").val(null);
-    });
+    $("#7").click(f (7));
+
+
+function f(num) {
+    let s;
+    if($("#text").val()!=null){
+        s=$("#text").val();
+    }
+    $("#text").val(s+num);
+}
+
 </script>
 </body>
 </html>

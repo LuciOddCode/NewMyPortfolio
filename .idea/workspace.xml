@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/audios/Kitt Scanner - Sound Effect.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/JS/Knight/audios/Stu Phillips - Knight Rider (Original Television Soundtrack) (Theme Song).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/JS/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/JS/mainJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/Cal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Cal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/Knight/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/Knight/audios" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/JS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -64,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assets\JS" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS\SPA\assets\js" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Knight" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Cal" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\CSS-Framework\assets" />
@@ -181,6 +184,11 @@
       <workItem from="1686114450631" duration="12000" />
       <workItem from="1686116515708" duration="12125000" />
       <workItem from="1686149749090" duration="4937000" />
+      <workItem from="1686201001342" duration="18000" />
+      <workItem from="1686547155642" duration="4787000" />
+      <workItem from="1686623453467" duration="4929000" />
+      <workItem from="1686637383843" duration="46000" />
+      <workItem from="1686704501402" duration="11144000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Knight Rider</title>
     <meta content="width=device-width initial-scale=1 minimum-scale=1 maximum-scale=2" name="viewport">
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <style>
@@ -14,7 +14,7 @@
             height: 100vh;
         }
 
-        section:nth-child(1) {
+        div:nth-child(1) {
             position: relative;
             display: flex;
             flex-direction: row;
@@ -45,7 +45,7 @@
 
         }
 
-        section:nth-child(3) {
+        div:nth-child(3) {
             position: relative;
             display: flex;
             flex-direction: row;
@@ -60,7 +60,7 @@
 
         }
 
-        div {
+        section:nth-child(2)>div {
             width: 100px;
             height: 50px;
             border: 2px solid white;
@@ -80,9 +80,9 @@
 </head>
 <body>
 
-<section>
+<div>
     <h1>Knight Rider</h1>
-</section>
+</div>
 
 <section id="lights">
     <div></div>
@@ -93,52 +93,56 @@
     <div></div>
     <div></div>
 </section>
-<section>
+<div>
     <button id="btnStart">Start</button>
     <button id="btnStop">Stop</button>
     <audio src="audios/Kitt%20Scanner%20-%20Sound%20Effect.mp3" controls autoplay loop></audio>
     <audio src="audios/Stu%20Phillips%20-%20Knight%20Rider%20(Original%20Television%20Soundtrack)%20(Theme%20Song).mp3" controls autoplay loop></audio>
-</section>
+</div>
 
 
 <script src="jquery-3.7.0.min.js"></script>
 <script>
-    let timer;
-    let timeout;
+    let divArr=document.querySelector("section").children;
+    let colors=["#FFFFFF","#FFFFFF","#FFFFFF",'#eed2d2'
+        ,"#fdbbbb","#ff4444","#FF0000"];
+    let interval;
+    let isDoneOneRound=true;
+    let count=0;
+
     $("#btnStart").click(function () {
-        let colors = [ "#FF0000", "#FF3333", "#FF6666"
-            , "#FF9999", "#FFCCCC", "#FFE5E5","#fffff"];
-        let lights = $("#lights").children();
 
 
-        clearInterval(timer);
-        timer = setInterval(function () {
-            for (let i = 0; i < lights.length; i++) {
-                $(lights[i]).css('background-color', colors[i]);
-            }
-            let lastColor = colors.pop();
-            colors.unshift(lastColor);
+        interval=setInterval(function (){
 
-            for (let i = lights.length; i > 0; i--) {
-                $(lights[i]).css('background-color', colors[i]);
-            }
-            lastColor = colors.pop();
-            colors.unshift(lastColor);
-            /*clearTimeout(timeout);
-            timeout=setTimeout(function () {
-                for (let i = lights.length; i > 0; i--) {
-                    $(lights[i]).css('background-color', "white");
+            if (isDoneOneRound){
+                for (let i = 0; i < divArr.length; i++) {
+                    divArr[i].style.background=colors[i];
+
                 }
-            }, 600);*/
-        },300);
+                let lastColor = colors.pop();
+                colors.unshift(lastColor);
+                count++;
+                if (count==8){
+                    isDoneOneRound=false;
+                }
+            }
+            if (!isDoneOneRound){
+                for (let i = divArr.length; i >=0 ; i--) {
+                    $(divArr[i]).css('background', colors[divArr.length-i]);
 
+                }
+                let lastColor = colors.pop();
+                colors.unshift(lastColor);
+                count--;
+                if (count==0){
+                    isDoneOneRound=true;
+                }
+            }
 
-    })
+        },150)
 
-    $("#btnStop").click(function () {
-        clearInterval(timer);
-        /*clearTimeout(timeout);*/
-    })
+    });
 </script>
 </body>
 
