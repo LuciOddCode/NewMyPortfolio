@@ -149,16 +149,145 @@
 
 <script src="jquery-3.7.0.min.js"></script>
 <script>
-    $("#7").click(f (7));
 
+    let currentValue=0;
+    let total=0;
+    let symbol;
 
-function f(num) {
-    let s;
-    if($("#text").val()!=null){
-        s=$("#text").val();
+    function numberPressed(num) {
+        let s;
+        if($("#text").val()!=null){
+            s=$("#text").val();
+        }
+        $("#text").val(s+num);
     }
-    $("#text").val(s+num);
-}
+
+    function calculate(s) {
+        if($("#text").val()!=null){
+            if (s==="+"){
+               currentValue= Number($("#text").val());
+                $("#text").val(null);
+                symbol=s;
+            }
+            if (s==="-"){
+                currentValue= Number($("#text").val());
+                $("#text").val(null);
+                symbol=s;
+            }
+            if (s==="/"){
+                currentValue= Number($("#text").val());
+                $("#text").val(null);
+                symbol=s;
+            }
+            if (s==="*"){
+                currentValue= Number($("#text").val());
+                $("#text").val(null);
+                symbol=s;
+            }
+        }
+        $("#text").val(s+num);
+    }
+
+    function equalSignClicked(){
+        var lastVal;
+        if (symbol === "+") {
+            let lastVal =Number($("#text").val());
+            total = currentValue + lastVal;
+        }
+        if (symbol==="-"){
+            let lastVal=$("#text").val();
+            total=currentValue-lastVal;
+        }
+        if (symbol==="/"){
+            let lastVal=$("#text").val();
+            total=currentValue/lastVal;
+        }
+        if (symbol==="*"){
+            let lastVal=$("#text").val();
+            total=currentValue*lastVal;
+        }
+
+        $("#text").val(total);
+    }
+
+
+    $("#c").click(function (){
+        $("#text").val(null);
+    });
+
+    $("#7").click(function () {
+        numberPressed(7);
+    });
+
+    $("#8").click(function () {
+        numberPressed(8);
+    });
+
+    $("#9").click(function () {
+        numberPressed(9);
+    });
+
+    $("#plus").click(function () {
+        calculate ("+");
+
+    });
+
+    $("#4").click(function () {
+        numberPressed(4);
+    });
+
+    $("#5").click(function () {
+        numberPressed(5);
+    });
+
+    $("#6").click(function () {
+        numberPressed(6);
+    });
+
+    $("#minus").click(function () {
+
+        calculate ("-");
+
+    });
+
+    $("#1").click(function () {
+        numberPressed(1);
+    });
+
+    $("#2").click(function () {
+        numberPressed(2);
+    });
+
+    $("#3").click(function () {
+        numberPressed(3);
+    });
+
+    $("#divide").click(function () {
+
+        calculate ("/");
+
+    });
+
+    $("#zero").click(function () {
+        numberPressed(0);
+    });
+
+    $("#period").click(function () {
+        numberPressed(".")
+    });
+    $("#equal").click(function () {
+        equalSignClicked();
+    });
+
+
+
+    $("#asterisk").click(function () {
+        calculate ("*")
+
+    });
+
+
+
 
 </script>
 </body>
