@@ -29,6 +29,9 @@
             margin: auto;
 
         }
+        audio{
+            display: none;
+        }
 
         section:nth-child(2) {
             position: relative;
@@ -96,8 +99,8 @@
 <div>
     <button id="btnStart">Start</button>
     <button id="btnStop">Stop</button>
-    <audio src="audios/Kitt%20Scanner%20-%20Sound%20Effect.mp3" controls autoplay loop></audio>
-    <audio src="audios/Stu%20Phillips%20-%20Knight%20Rider%20(Original%20Television%20Soundtrack)%20(Theme%20Song).mp3" controls autoplay loop></audio>
+    <audio id="scanner" src="audios/Kitt%20Scanner%20-%20Sound%20Effect.mp3" controls autoplay loop></audio>
+    <audio id="theme" src="audios/Stu%20Phillips%20-%20Knight%20Rider%20(Original%20Television%20Soundtrack)%20(Theme%20Song).mp3" controls autoplay loop></audio>
 </div>
 
 
@@ -112,7 +115,13 @@
 
     $("#btnStart").click(function () {
 
+        let scanner = $("#scanner")[0];
+        let theme = $("#theme")[0];
+        scanner.play();
+        theme.play();
 
+
+        clearInterval(interval);
         interval=setInterval(function (){
 
             if (isDoneOneRound){
@@ -142,6 +151,14 @@
 
         },150)
 
+    });
+
+    $("#btnStop").click(function () {
+        clearInterval(interval);
+        let scanner = $("#scanner")[0];
+        let theme = $("#theme")[0];
+        scanner.pause();
+        theme.pause();
     });
 </script>
 </body>

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Cal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Cal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/JS/mainJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/JS/mainJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +186,13 @@
       <workItem from="1686547155642" duration="4787000" />
       <workItem from="1686623453467" duration="4929000" />
       <workItem from="1686637383843" duration="46000" />
-      <workItem from="1686704501402" duration="19118000" />
+      <workItem from="1686704501402" duration="31332000" />
+      <workItem from="1686758455136" duration="877000" />
+      <workItem from="1686759371620" duration="440000" />
+      <workItem from="1686782621532" duration="1164000" />
+      <workItem from="1686783982318" duration="612000" />
+      <workItem from="1686796272175" duration="5048000" />
+      <workItem from="1686802297834" duration="2476000" />
     </task>
     <servers />
   </component>

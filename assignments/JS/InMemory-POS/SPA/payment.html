@@ -113,11 +113,11 @@
 
         <div class="col-xs-12 col-sm-12 col-md-3">
             <h5 class="row ">Sub Total : </h5>
-            <h5 class="row justify-content-center">24000.00</h5>
+            <h5 class="row justify-content-center">00.00</h5>
             <h5 class="row">Discount : </h5>
-            <h5 class="row justify-content-center">2100.00</h5>
+            <h5 class="row justify-content-center">00.00</h5>
             <h5 class="row">Net Total</h5>
-            <h5 class="row justify-content-center">21900.00</h5>
+            <h5 class="row justify-content-center">00.00</h5>
 
 
             <div class="row pt-3 gap-3 justify-content-center ">
@@ -156,22 +156,22 @@
     <div class="row">
         <div class="row g-3 justify-content-center">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Name" class="form-control" id placeholder="Name" type="text">
+                <input aria-label="Name" class="form-control" id="cName" placeholder="Name" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Address" class="form-control" placeholder="Address" type="text">
+                <input aria-label="Address" class="form-control" id="cAddress" placeholder="Address" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Email" class="form-control" placeholder="Email" type="text">
+                <input aria-label="Email" class="form-control" id="cMAil" placeholder="Email" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Telephone" class="form-control" placeholder="Telephone" type="text">
+                <input aria-label="Telephone" class="form-control" id="cTP" placeholder="Telephone" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="DOB" class="form-control" placeholder="DOB-DD/MM/YYYY" type="text">
+                <input aria-label="DOB" class="form-control" id="cDOB" placeholder="DOB-DD/MM/YYYY" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-1">
-                <button class="btn btn-success" type="button">Add</button>
+                <button class="btn btn-success" id="cAddB" type="button">Add</button>
             </div>
 
         </div>
@@ -194,54 +194,9 @@
                     <th scope="col">Button</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="cTBody">
                 <tr>
-                    <th scope="row">1</th>
-                    <td>C00-001</td>
-                    <td>Rusiru</td>
-                    <td>Galle</td>
-                    <td>dasanaya@gmail.com</td>
-                    <td>0766923644</td>
-                    <td>20.12.2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>C00-002</td>
-                    <td>Rusiru</td>
-                    <td>Galle</td>
-                    <td>dasanaya@gmail.com</td>
-                    <td>0766923644</td>
-                    <td>20.12.2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>C00-003</td>
-                    <td>Rusiru</td>
-                    <td>Galle</td>
-                    <td>dasanaya@gmail.com</td>
-                    <td>0766923644</td>
-                    <td>20.12.2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>C00-004</td>
-                    <td>Rusiru</td>
-                    <td>Galle</td>
-                    <td>dasanaya@gmail.com</td>
-                    <td>0766923644</td>
-                    <td>20.12.2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
+
                 </tr>
 
 
@@ -517,44 +472,69 @@
     })
 
 
-
-
-
 </script>
 <script>
-   /* let thVal=0;
-    /!*For Purchase page*!/
+    let thVal = 0;
 
-    $("#purItemBtnAdd").click(function () {
+    var customerDB = [];
+    /*For Customer*/
 
-
-        let code = $('#purItemCode').val();
-        let desc = $('#purItemSesc').val();
-        let unit = $('#purItemUPrice').val();
-        let qty =  $('#purItemQty').val();
+    $("#cAddB").click(function () {
+//to empty a table use $("t body id").empty(); function
 
 
+        let customer = {
+            name: $('#cName').val(),
+            address: $('#cAddress').val(),
+            mail: $('#cMAil').val(),
+            tp: $('#cTP').val(),
+            dob: $('#cDOB').val()
+        }
+        customerDB.push(customer);
 
         thVal++;
 
 
-        let row=`<tr>
+        let row = `<tr>
                     <th>${thVal}</th>
-                    <td>${code}</td>
-                    <td>${desc}</td>
-                    <td>${unit}</td>
-                    <td>${qty}</td>
-                    <td>${qty*unit}</td>
-                    <button class="btn btn-danger">Delete</button>
+                    <td>${thVal}</td>
+                    <td>${customer.name}</td>
+                    <td>${customer.address}</td>
+                    <td>${customer.mail}</td>
+                    <td>${customer.tp}</td>
+                    <td>${customer.dob}</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
                   </tr>`;
 
 
-
-        let purBody =$("#purTBody");
+        let purBody = $("#cTBody");
 
         purBody.append(row);
+        bindSelectEvent();
 
-    });*/
+    });
+
+    function bindSelectEvent() {
+        $("#cTBody>tr").click(function () {
+            let name = $(this).children(":eq(2)").text();
+            let address = $(this).children(":eq(3)").text();
+            let mail = $(this).children(":eq(4)").text();
+            let tp = $(this).children(":eq(5)").text();
+            let dob = $(this).children(":eq(6)").text();
+
+
+                $('#cName').val()
+                $('#cAddress').val()
+                $('#cMAil').val(), $('#cTP').val()
+                $('#cDOB').val()
+
+
+            $('#purItemCode').val(code);
+            $('#purItemSesc').val(description);
+            $('#purItemUPrice').val(unitPrice);
+            $('#purItemQty').val(quantity);
+        });
+    }
 </script>
 
 <!--<script>
@@ -600,46 +580,68 @@
 
 </script>-->
 <script>
-    let thVal=0;
+    let thVal = 0;
 
-    var customerDB =[];
+    var customerDB = [];
     /*For Purchase page*/
 
     $("#purItemBtnAdd").click(function () {
 //to empty a table use $("t body id").empty(); function
 
 
-        let customer ={
+        let customer = {
             code: $('#purItemCode').val(),
             desc: $('#purItemSesc').val(),
             unit: $('#purItemUPrice').val(),
-            qty:  $('#purItemQty').val()
+            qty: $('#purItemQty').val()
         }
         customerDB.push(customer);
 
         thVal++;
 
 
-
-        let row=`<tr>
+        let row = `<tr>
                     <th>${thVal}</th>
                     <td>${customer.code}</td>
                     <td>${customer.desc}</td>
                     <td>${customer.unit}</td>
                     <td>${customer.qty}</td>
-                    <td>${customer.qty*customer.unit}</td>
+                    <td>${customer.qty * customer.unit}</td>
                     <td><button class="btn btn-danger">Delete</button></td>
                   </tr>`;
 
 
-
-        let purBody =$("#purTBody");
+        let purBody = $("#purTBody");
 
         purBody.append(row);
+        bindSelectEvent();
 
     });
 
+    function bindSelectEvent() {
+        $("#purTBody>tr").click(function () {
+            let no = $(this).children(":eq(0)").text();
+            let code = $(this).children(":eq(1)").text();
+            let description = $(this).children(":eq(2)").text();
+            let unitPrice = $(this).children(":eq(3)").text();
+            let quantity = $(this).children(":eq(4)").text();
 
+
+            $('#purItemCode').val(code);
+            $('#purItemSesc').val(description);
+            $('#purItemUPrice').val(unitPrice);
+            $('#purItemQty').val(quantity);
+        });
+    }
+
+    /* function setText(code,description,unitPrice,quantity) {
+         bindSelectEvent();
+
+         $('#purItemCode').val(code);
+         $('#purItemSesc').val(description);
+         $('#purItemUPrice').val(unitPrice);
+         $('#purItemQty').val(quantity);
+     }*/
 
 </script>
 </body>
