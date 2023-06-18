@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/JS/mainJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/JS/mainJS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/Knight/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/Knight/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -192,7 +190,14 @@
       <workItem from="1686782621532" duration="1164000" />
       <workItem from="1686783982318" duration="612000" />
       <workItem from="1686796272175" duration="5048000" />
-      <workItem from="1686802297834" duration="2476000" />
+      <workItem from="1686802297834" duration="5323000" />
+      <workItem from="1686819364022" duration="600000" />
+      <workItem from="1686838554751" duration="1139000" />
+      <workItem from="1686894239799" duration="6328000" />
+      <workItem from="1686970292926" duration="8000" />
+      <workItem from="1686970734253" duration="2339000" />
+      <workItem from="1687006679079" duration="4033000" />
+      <workItem from="1687050072591" duration="983000" />
     </task>
     <servers />
   </component>

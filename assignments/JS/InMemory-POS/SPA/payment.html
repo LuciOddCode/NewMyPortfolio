@@ -191,7 +191,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                     <th scope="col">DOB</th>
-                    <th scope="col">Button</th>
+                    <th class="cDelBut" scope="col">Button</th>
                 </tr>
                 </thead>
                 <tbody id="cTBody">
@@ -441,7 +441,14 @@
 
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
+<!--/*SPA logics*/-->
 <script>
+
+
+$('#payment').css("display", "grid");
+$('#customer').css("display", "none");
+$('#item').css("display", "none");
+$('#ordersSec').css("display", "none");
 
     $("#btnPurchase").click(function () {
         $('#payment').css("display", "grid");
@@ -473,16 +480,17 @@
 
 
 </script>
+
+<!--Customer page logics-->
 <script>
+
     let thVal = 0;
 
     var customerDB = [];
     /*For Customer*/
 
     $("#cAddB").click(function () {
-//to empty a table use $("t body id").empty(); function
-
-
+// to empty a table use $("t body id").empty(); function
         let customer = {
             name: $('#cName').val(),
             address: $('#cAddress').val(),
@@ -523,90 +531,80 @@
             let dob = $(this).children(":eq(6)").text();
 
 
-                $('#cName').val()
-                $('#cAddress').val()
-                $('#cMAil').val(), $('#cTP').val()
-                $('#cDOB').val()
+            $('#cName').val(name)
+            $('#cAddress').val(address)
+            $('#cMAil').val(mail)
+            $('#cTP').val(tp)
+            $('#cDOB').val(dob)
 
 
-            $('#purItemCode').val(code);
-            $('#purItemSesc').val(description);
-            $('#purItemUPrice').val(unitPrice);
-            $('#purItemQty').val(quantity);
+            $("#cTBody>tr>td>button").click(function () {
+                let consent =confirm("Do you want delete customer? Are you SURE?");
+                if (consent){
+                    let response=deleteRow( $('#cName').val(name));
+                    if (response){
+                        alert("Customer Deleted");
+                    }else{
+                        alert("Customer Not Removed")
+                    }
+                }
+            });
         });
+
+
+
+
+
+        function deleteRow(id){
+            for (let i = 0; i < customerDB.length; i++) {
+                if (customerDB[i].name===id){
+                    customerDB.splice(i,1);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function search(customer){
+            if (!(customer.name===null)){
+
+            }
+        }
     }
 </script>
 
-<!--<script>
-    let thVal=0;
-
-    var customerDB =[];
-    /*For Purchase page*/
-
-    $("#purItemBtnAdd").click(function () {
-//to empty a table use $("t body id").empty(); function
-
-        let code = $('#purItemCode').val();
-        let desc = $('#purItemSesc').val();
-        let unit = $('#purItemUPrice').val();
-        let qty =  $('#purItemQty').val();
-
-        let customer =[code,desc,unit,qty,unit*qty];
-        customerDB.push(customer);
-
-        thVal++;
-
-
-
-        let row=`<tr>
-                    <th>${thVal}</th>
-                    <td>${code}</td>
-                    <td>${desc}</td>
-                    <td>${unit}</td>
-                    <td>${qty}</td>
-                    <td>${qty*unit}</td>
-                    <button class="btn btn-danger">Delete</button>
-                  </tr>`;
-
-
-
-        let purBody =$("#purTBody");
-
-        purBody.append(row);
-
-    });
-
-
-
-</script>-->
 <script>
+
+</script>
+<script>
+
     let thVal = 0;
 
-    var customerDB = [];
+    var orderDB = [];
     /*For Purchase page*/
 
     $("#purItemBtnAdd").click(function () {
 //to empty a table use $("t body id").empty(); function
 
 
-        let customer = {
+        let order = {
             code: $('#purItemCode').val(),
             desc: $('#purItemSesc').val(),
             unit: $('#purItemUPrice').val(),
             qty: $('#purItemQty').val()
         }
-        customerDB.push(customer);
+        orderDB.push(order);
 
         thVal++;
 
 
         let row = `<tr>
                     <th>${thVal}</th>
-                    <td>${customer.code}</td>
-                    <td>${customer.desc}</td>
-                    <td>${customer.unit}</td>
-                    <td>${customer.qty}</td>
-                    <td>${customer.qty * customer.unit}</td>
+                    <td>${order.code}</td>
+                    <td>${order.desc}</td>
+                    <td>${order.unit}</td>
+                    <td>${order.qty}</td>
+                    <td>${order.qty * order.unit}</td>
                     <td><button class="btn btn-danger">Delete</button></td>
                   </tr>`;
 
@@ -633,15 +631,6 @@
             $('#purItemQty').val(quantity);
         });
     }
-
-    /* function setText(code,description,unitPrice,quantity) {
-         bindSelectEvent();
-
-         $('#purItemCode').val(code);
-         $('#purItemSesc').val(description);
-         $('#purItemUPrice').val(unitPrice);
-         $('#purItemQty').val(quantity);
-     }*/
 
 </script>
 </body>
