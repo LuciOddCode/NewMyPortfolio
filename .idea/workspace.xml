@@ -4,7 +4,8 @@
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/SPA/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/contactme/58e91965eb97430e819064f5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/contactme/58e91965eb97430e819064f5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/contactme/62bda0d7bafda8767a088b3e.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/contactme/62bda0d7bafda8767a088b3e.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,6 +199,7 @@
       <workItem from="1686970734253" duration="2339000" />
       <workItem from="1687006679079" duration="4033000" />
       <workItem from="1687050072591" duration="983000" />
+      <workItem from="1687089998905" duration="32473000" />
     </task>
     <servers />
   </component>
