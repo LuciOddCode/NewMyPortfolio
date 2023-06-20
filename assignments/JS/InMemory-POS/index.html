@@ -10,6 +10,7 @@
     <link href="assets/styles.css" rel="stylesheet">
 
 
+
 </head>
 <body class="container-xxl">
 <!--navigation Bar-->
@@ -271,51 +272,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>I00-001</td>
-                    <td>Ram 4GB</td>
-                    <td>Dell</td>
-                    <td>Rs.4000.00</td>
-                    <td>14</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>I00-002</td>
-                    <td>Ram 8GB</td>
-                    <td>Dell</td>
-                    <td>Rs.6500.00</td>
-                    <td>12</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>I00-003</td>
-                    <td>Monitor</td>
-                    <td>Samsung</td>
-                    <td>Rs.16000.00</td>
-                    <td>3</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>I00-004</td>
-                    <td>Mouse-RGB</td>
-                    <td>Razor</td>
-                    <td>Rs.4000.00</td>
-                    <td>9</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                </tr>
 
-
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -389,47 +347,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>O00-001</td>
-                    <td>C00-001</td>
-                    <td>Rs.4000.00</td>
-                    <td>05/11/2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                    <td>
-                        <Button class="btn btn-outline-info">View Order</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>O00-002</td>
-                    <td>C00-001</td>
-                    <td>Rs.4000.00</td>
-                    <td>05/11/2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                    <td>
-                        <Button class="btn btn-outline-info">View Order</Button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>O00-003</td>
-                    <td>C00-001</td>
-                    <td>Rs.4000.00</td>
-                    <td>05/11/2023</td>
-                    <td>
-                        <Button class="btn btn-outline-danger">Delete</Button>
-                    </td>
-                    <td>
-                        <Button class="btn btn-outline-info">View Order</Button>
-                    </td>
-                </tr>
-
-
                 </tbody>
             </table>
         </div>
@@ -441,136 +358,13 @@
 
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
-<!--/*SPA logics*/-->
-<script>
-
-
-$('#payment').css("display", "grid");
-$('#customer').css("display", "none");
-$('#item').css("display", "none");
-$('#ordersSec').css("display", "none");
-
-    $("#btnPurchase").click(function () {
-        $('#payment').css("display", "grid");
-        $('#customer').css("display", "none");
-        $('#item').css("display", "none");
-        $('#ordersSec').css("display", "none");
-    });
-
-    $("#btnCustomer").click(function () {
-        $('#payment').css("display", "none");
-        $('#customer').css("display", "grid");
-        $('#item').css("display", "none");
-        $('#ordersSec').css("display", "none");
-    })
-
-    $("#btnItem").click(function () {
-        $('#payment').css("display", "none");
-        $('#customer').css("display", "none");
-        $('#item').css("display", "grid");
-        $('#ordersSec').css("display", "none");
-    })
-
-    $("#btnNavOrder").click(function () {
-        $('#payment').css("display", "none");
-        $('#customer').css("display", "none");
-        $('#item').css("display", "none");
-        $('#ordersSec').css("display", "grid");
-    })
-
-
-</script>
+<!--/*Navigations*/-->
+<script src="controller/NavigationController.js"></script>
 
 <!--Customer page logics-->
 <script>
 
-    let thVal = 0;
 
-    var customerDB = [];
-    /*For Customer*/
-
-    $("#cAddB").click(function () {
-// to empty a table use $("t body id").empty(); function
-        let customer = {
-            name: $('#cName').val(),
-            address: $('#cAddress').val(),
-            mail: $('#cMAil').val(),
-            tp: $('#cTP').val(),
-            dob: $('#cDOB').val()
-        }
-        customerDB.push(customer);
-
-        thVal++;
-
-
-        let row = `<tr>
-                    <th>${thVal}</th>
-                    <td>${thVal}</td>
-                    <td>${customer.name}</td>
-                    <td>${customer.address}</td>
-                    <td>${customer.mail}</td>
-                    <td>${customer.tp}</td>
-                    <td>${customer.dob}</td>
-                    <td><button class="btn btn-danger">Delete</button></td>
-                  </tr>`;
-
-
-        let purBody = $("#cTBody");
-
-        purBody.append(row);
-        bindSelectEvent();
-
-    });
-
-    function bindSelectEvent() {
-        $("#cTBody>tr").click(function () {
-            let name = $(this).children(":eq(2)").text();
-            let address = $(this).children(":eq(3)").text();
-            let mail = $(this).children(":eq(4)").text();
-            let tp = $(this).children(":eq(5)").text();
-            let dob = $(this).children(":eq(6)").text();
-
-
-            $('#cName').val(name)
-            $('#cAddress').val(address)
-            $('#cMAil').val(mail)
-            $('#cTP').val(tp)
-            $('#cDOB').val(dob)
-
-
-            $("#cTBody>tr>td>button").click(function () {
-                let consent =confirm("Do you want delete customer? Are you SURE?");
-                if (consent){
-                    let response=deleteRow( $('#cName').val(name));
-                    if (response){
-                        alert("Customer Deleted");
-                    }else{
-                        alert("Customer Not Removed")
-                    }
-                }
-            });
-        });
-
-
-
-
-
-        function deleteRow(id){
-            for (let i = 0; i < customerDB.length; i++) {
-                if (customerDB[i].name===id){
-                    customerDB.splice(i,1);
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        function search(customer){
-            if (!(customer.name===null)){
-
-            }
-        }
-    }
 </script>
 
 <script>
