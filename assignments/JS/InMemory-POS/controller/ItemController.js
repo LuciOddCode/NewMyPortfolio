@@ -1,6 +1,6 @@
 
-let thVal = 0;
-$("#I_code").val(generateNewId());
+let thValItem = 0;
+$("#I_code").val(generateNewCode());
 
 
 
@@ -10,51 +10,51 @@ $("#I_btnAdd").click(function () {
     if (isAvailable) {
         /* $("#cAddB").textContent("Update");*/
         updateItem(code);
-        getAll();
-        clearFields();
-        $("#I_code").val(generateNewId());
+        getAllItems();
+        clearItemFields();
+        $("#I_code").val(generateNewCode());
         /* $("#cAddB").textContent("Add");*/
     } else {
-        saveCustomer();
-        getAll();
-        clearFields();
-        $("#I_code").val(generateNewId());
+        saveItem();
+        getAllItems();
+        clearItemFields();
+        $("#I_code").val(generateNewCode());
     }
 });
 
 function bindSelectEvent() {
     $("#I_tBody>tr").click(function () {
         let code = $(this).children(":eq(1)").text();
-        let name = $(this).children(":eq(2)").text();
-        let address = $(this).children(":eq(3)").text();
-        let mail = $(this).children(":eq(4)").text();
-        let tp = $(this).children(":eq(5)").text();
-        let dob = $(this).children(":eq(6)").text();
+        let desc = $(this).children(":eq(2)").text();
+        let brand = $(this).children(":eq(3)").text();
+        let unitPrice = $(this).children(":eq(4)").text();
+        let qty = $(this).children(":eq(5)").text();
+
 
 
         $('#I_code').val(code);
-        $('#cName').val(name);
-        $('#cAddress').val(address);
-        $('#cMAil').val(mail);
-        $('#cTP').val(tp);
-        $('#cDOB').val(dob);
+        $('#I_desc').val(desc);
+        $('#I_brand').val(brand);
+        $('#I_unitPrice').val(unitPrice);
+        $('#I_quantity').val(qty);
+
 
 
         $("#cTBody>tr>td>button").click(function () {
             let consent = confirm("Do you want delete item? Are you SURE?");
             if (consent) {
-                let response = deleteCustomer($(this).children(":eq(1)").text());
+                let response = deleteItem($(this).children(":eq(1)").text());
 
-                $("#I_code").val(generateNewId());
+                $("#I_code").val(generateNewCode());
                 if (response) {
-                    alert("Customer Deleted");
-                    getAll();
-                    clearFields();
+                    alert("Item Deleted");
+                    getAllItems();
+                    clearItemFields();
                 } else {
-                    alert("Customer Not Removed")
-                    getAll();
-                    clearFields();
-                    $("#I_code").val(generateNewId());
+                    alert("Item Not Removed")
+                    getAllItems();
+                    clearItemFields();
+                    $("#I_code").val(generateNewCode());
                 }
             }
         });
@@ -62,7 +62,7 @@ function bindSelectEvent() {
 }
 
 function isAnItem(code) {
-    let item = searchCustomer(code);
+    let item = searchItem(code);
     if (item===undefined){
         return false
     }else{
@@ -72,29 +72,27 @@ function isAnItem(code) {
 }
 
 //crud operations
-function getAll() {
-    $("#cTBody").empty();
+function getAllItems() {
+    $("#I_tBody").empty();
 
     for (let i = 0; i < itemDB.length; i++) {
         let code = itemDB[i].code;
-        let name = itemDB[i].name;
-        let address = itemDB[i].address;
-        let mail = itemDB[i].mail;
-        let tp = itemDB[i].tp;
-        let dob = itemDB[i].dob;
-        thVal=i+1;
+        let desc = itemDB[i].desc;
+        let brand = itemDB[i].brand;
+        let unitPrice = itemDB[i].unitPrice;
+        let qty = itemDB[i].qty;
+        thValItem=i+1;
 
         let row = `<tr>
-                     <td>${thVal}</td>
+                     <td>${thValItem}</td>
                      <td>${code}</td>
-                     <td>${name}</td>
-                     <td>${address}</td>
-                     <td>${mail}</td>
-                     <td>${tp}</td>
-                     <td>${dob}</td>
+                     <td>${desc}</td>
+                     <td>${brand}</td>
+                     <td>${unitPrice}</td>
+                     <td>${qty}</td>
                      <td><button class="btn btn-danger">Delete</button></td>
                     </tr>`;
-        $("#cTBody").append(row);
+        $("#I_tBody").append(row);
 
         bindSelectEvent();
 
@@ -102,23 +100,21 @@ function getAll() {
 }
 
 function saveItem() {
-    let code =generateNewId();
-    let name = $("#cName").val();
-    let address = $("#cAddress").val();
-    let mail = $("#cMAil").val();
-    let tp = $("#cTP").val();
-    let dob = $("#cDOB").val();
+    let code =generateNewCode();
+    let desc = $("#I_desc").val();
+    let brand = $("#I_brand").val();
+    let unitPrice = $("#cMAil").val();
+    let qty = $("#I_quantity").val();
 
-    let newCustomer = Object.assign({},Customer);
+    let newItem = Object.assign({},Item);
 
-    newCustomer.code=code;
-    newCustomer.name=name;
-    newCustomer.address=address;
-    newCustomer.mail=mail;
-    newCustomer.tp=tp;
-    newCustomer.dob=dob;
+    newItem.code=code;
+    newItem.desc=desc;
+    newItem.brand=brand;
+    newItem.unitPrice=unitPrice;
+    newItem.qty=qty;
 
-    itemDB.push(newCustomer);
+    itemDB.push(newItem);
 }
 
 function deleteItem(code) {
@@ -131,32 +127,31 @@ function deleteItem(code) {
 
 function updateItem(code) {
     let item = searchItem(code);
-    let name = $("#cName").val();
-    let address = $("#cAddress").val();
-    let mail = $("#cMAil").val();
-    let tp = $("#cTP").val();
-    let dob = $("#cDOB").val();
+    let desc = $("#I_desc").val();
+    let brand = $("#I_brand").val();
+    let unitPrice = $("#cMAil").val();
+    let qty = $("#I_quantity").val();
 
-    item.name=name;
-    item.address=address;
-    item.mail=mail;
-    item.tp=tp;
-    item.dob=dob;
+    item.desc=desc;
+    item.brand=brand;
+    item.unitPrice=unitPrice;
+    item.qty=qty;
+
 }
 
 function searchItem(code) {
-    let avilCustomer = Object.assign({},Customer);
+    let avilItem = Object.assign({},Item);
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].code===code){
-            newCustomer=itemDB[i];
-            return newCustomer;
+            avilItem=itemDB[i];
+            return avilItem;
         }
     }
 
 
 }
 
-function generateNewId() {
+function generateNewCode() {
     if (itemDB.length !== 0) {
         let lastID = itemDB[itemDB.length - 1].code;
         let oldValue = lastID.slice(-1);
@@ -166,11 +161,10 @@ function generateNewId() {
         return "I00-001";
     }
 }
-function clearFields() {
+function clearItemFields() {
     $("#I_code").val("");
-    $("#cName").val("");
-    $("#cAddress").val("");
+    $("#I_desc").val("");
+    $("#I_brand").val("");
     $("#cMAil").val("");
-    $("#cTP").val("");
-    $("#cDOB").val("");
+    $("#I_quantity").val("");
 }

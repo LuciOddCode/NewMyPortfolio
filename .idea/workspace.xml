@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/CustomerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pages/education.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pages/about.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pages/gallery.html" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -204,7 +205,7 @@
       <workItem from="1687316369962" duration="1609000" />
       <workItem from="1687318021826" duration="3278000" />
       <workItem from="1687441386240" duration="4911000" />
-      <workItem from="1687492510821" duration="6765000" />
+      <workItem from="1687492510821" duration="11347000" />
     </task>
     <servers />
   </component>
