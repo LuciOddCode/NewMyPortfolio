@@ -10,7 +10,6 @@
     <link href="assets/styles.css" rel="stylesheet">
 
 
-
 </head>
 <body class="container-xxl">
 <!--navigation Bar-->
@@ -140,8 +139,8 @@
     </div>
     <!--first row-->
     <div class=" row">
-        <h4 class="col-xs-12 col-sm-12 col-md-10 ">Manage Customer</h4>
-        <h5 class="col-xs-12 col-sm-12 col-md-2 ">Next Cus ID : </h5>
+        <h4 class="col-xs-12 col-sm-12 col-md-8 ">Manage Customer</h4>
+        <input aria-label="Name" class=" col-xs-12 col-sm-12 col-md-2 form-control" id="cusId" placeholder="CusID" type="text">
     </div>
 
     <!--second row search-->
@@ -182,7 +181,7 @@
 
     <div class="row pt-5">
         <div class="col-12">
-            <table class=" table table-striped-columns" id="myTable2">
+            <table class=" table table-striped-columns" id="cusTable">
                 <thead class="col-12">
                 <tr class="col-12">
                     <th scope="col">#</th>
@@ -220,7 +219,7 @@
     <!--first row-->
     <div class=" row">
         <h4 class="col-xs-12 col-sm-12 col-md-10 ">Stock Management</h4>
-        <h5 class="col-xs-12 col-sm-12 col-md-2 ">Next Item Code : </h5>
+        <input aria-label="Item Code" id="I_code" class="form-control" placeholder="Item Code" type="text">
     </div>
 
     <!--second row search-->
@@ -229,26 +228,26 @@
             <input aria-describedby="button-addon2" aria-label="Recipient's username" class="col-4 form-control"
                    placeholder="Search Item"
                    type="text">
-            <button class="btn btn-outline-secondary" id="button-addon4" type="button">Search</button>
+            <button class="btn btn-outline-secondary" id="btnSearchItem" type="button">Search</button>
         </div>
     </div>
     <!--Third row - Fields-->
     <div class="row">
         <div class="row g-3 justify-content-center">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Name" class="form-control " placeholder="Description" type="text">
+                <input aria-label="Name" id="I_desc" class="form-control " placeholder="Description" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Address" class="form-control" placeholder="Brand" type="text">
+                <input aria-label="Address" id="I_brand" class="form-control" placeholder="Brand" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Email" class="form-control" placeholder="Unit Price" type="text">
+                <input aria-label="Email" id="I_unitPrice" class="form-control" placeholder="Unit Price" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <input aria-label="Telephone" class="form-control" placeholder="Quantity" type="text">
+                <input aria-label="Telephone" id="I_quantity" class="form-control" placeholder="Quantity" type="text">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-1">
-                <button class="btn btn-success" type="button">Add</button>
+                <button class="btn btn-success" id="I_btnAdd" type="button">Add</button>
             </div>
 
         </div>
@@ -270,7 +269,7 @@
                     <th scope="col">Button</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="I_tBody">
                 <tr>
 
                 </tr>
@@ -358,74 +357,32 @@
 
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
-<!--/*Navigations*/-->
+
+<!--Navigations-->
 <script src="controller/NavigationController.js"></script>
+<!--DB-->
+<script src="db/db.js"></script>
 
+<!--models-->
+<!--customer-->
+<script src="model/Customer.js"></script>
+<!--Item-->
+<script src="model/Item.js"></script>
+
+
+<!--controllers-->
 <!--Customer page logics-->
-<script>
+<script src="controller/CustomerController.js"></script>
+
+<!--Item Controller-->
+<script src="controller/ItemController.js"></script>
+
+<!--Order Controller-->
+<script src="controller/OrderController.js"></script>
+
+<!--Purchase Controller-->
+<script src="controller/PurchaseController.js"></script>
 
 
-</script>
-
-<script>
-
-</script>
-<script>
-
-    let thVal = 0;
-
-    var orderDB = [];
-    /*For Purchase page*/
-
-    $("#purItemBtnAdd").click(function () {
-//to empty a table use $("t body id").empty(); function
-
-
-        let order = {
-            code: $('#purItemCode').val(),
-            desc: $('#purItemSesc').val(),
-            unit: $('#purItemUPrice').val(),
-            qty: $('#purItemQty').val()
-        }
-        orderDB.push(order);
-
-        thVal++;
-
-
-        let row = `<tr>
-                    <th>${thVal}</th>
-                    <td>${order.code}</td>
-                    <td>${order.desc}</td>
-                    <td>${order.unit}</td>
-                    <td>${order.qty}</td>
-                    <td>${order.qty * order.unit}</td>
-                    <td><button class="btn btn-danger">Delete</button></td>
-                  </tr>`;
-
-
-        let purBody = $("#purTBody");
-
-        purBody.append(row);
-        bindSelectEvent();
-
-    });
-
-    function bindSelectEvent() {
-        $("#purTBody>tr").click(function () {
-            let no = $(this).children(":eq(0)").text();
-            let code = $(this).children(":eq(1)").text();
-            let description = $(this).children(":eq(2)").text();
-            let unitPrice = $(this).children(":eq(3)").text();
-            let quantity = $(this).children(":eq(4)").text();
-
-
-            $('#purItemCode').val(code);
-            $('#purItemSesc').val(description);
-            $('#purItemUPrice').val(unitPrice);
-            $('#purItemQty').val(quantity);
-        });
-    }
-
-</script>
 </body>
 </html>
