@@ -3,8 +3,13 @@ $('#payment').css("display", "grid");
 $('#customer').css("display", "none");
 $('#item').css("display", "none");
 $('#ordersSec').css("display", "none");
-
+loadCustomerID();
+loadItemCode();
+loadDate();
 $("#btnPurchase").click(function () {
+    loadCustomerID();
+    loadItemCode();
+    loadDate();
     $('#payment').css("display", "grid");
     $('#customer').css("display", "none");
     $('#item').css("display", "none");

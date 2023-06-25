@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/NavigationController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/NavigationController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/db/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/model/Item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +58,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/JS" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments/JS/InMemory-POS/model" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS\model" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assets\JS" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS\SPA\assets\js" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS" />
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Knight" />
-      <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\Cal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IJSE\GDSE\Internet Technologies\MyWorkingZone\NewMP\NewMyPortfolio\assignments\JS\InMemory-POS" />
@@ -206,6 +211,14 @@
       <workItem from="1687318021826" duration="3278000" />
       <workItem from="1687441386240" duration="4911000" />
       <workItem from="1687492510821" duration="11347000" />
+      <workItem from="1687572774796" duration="2401000" />
+      <workItem from="1687578246743" duration="1420000" />
+      <workItem from="1687579746776" duration="709000" />
+      <workItem from="1687580516124" duration="374000" />
+      <workItem from="1687580964446" duration="1327000" />
+      <workItem from="1687614211536" duration="4832000" />
+      <workItem from="1687681979039" duration="996000" />
+      <workItem from="1687684322981" duration="15984000" />
     </task>
     <servers />
   </component>

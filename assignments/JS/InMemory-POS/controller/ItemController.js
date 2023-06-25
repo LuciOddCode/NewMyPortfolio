@@ -40,7 +40,7 @@ function bindSelectEvent() {
 
 
 
-        $("#cTBody>tr>td>button").click(function () {
+        $("#I_tBody>tr>td>button").click(function () {
             let consent = confirm("Do you want delete item? Are you SURE?");
             if (consent) {
                 let response = deleteItem($(this).children(":eq(1)").text());
@@ -103,7 +103,7 @@ function saveItem() {
     let code =generateNewCode();
     let desc = $("#I_desc").val();
     let brand = $("#I_brand").val();
-    let unitPrice = $("#cMAil").val();
+    let unitPrice = $("#I_unitPrice").val();
     let qty = $("#I_quantity").val();
 
     let newItem = Object.assign({},Item);
@@ -129,7 +129,7 @@ function updateItem(code) {
     let item = searchItem(code);
     let desc = $("#I_desc").val();
     let brand = $("#I_brand").val();
-    let unitPrice = $("#cMAil").val();
+    let unitPrice = $("#I_unitPrice").val();
     let qty = $("#I_quantity").val();
 
     item.desc=desc;
@@ -165,6 +165,6 @@ function clearItemFields() {
     $("#I_code").val("");
     $("#I_desc").val("");
     $("#I_brand").val("");
-    $("#cMAil").val("");
+    $("#I_unitPrice").val("");
     $("#I_quantity").val("");
 }
