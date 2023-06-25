@@ -146,8 +146,10 @@ function addToBasket() {
 
 function voidItem(code) {
     //remove item from basket
-    searchBasketItem(code);
-    basketDB.findIndex()
+    let itemFound = searchBasketItem(code);
+    let index=basketDB.findIndex(itemFound);
+    basketDB.splice(index,1);
+    getAllBasket();
     return true;
 }
 
@@ -207,6 +209,15 @@ function saveOrder() {
     orderDB.push(newOrder);
 }
 
+function searchBasketItem(code) {
+    let avilItem = Object.assign({}, Basket);
+    for (let i = 0; i < basketDB.length; i++) {
+        if (basketDB[i].code === code) {
+            avilItem = bas[i];
+            return avilItem;
+        }
+    }
+}
 
 function searchItem(code) {
     let avilItem = Object.assign({},Item);

@@ -174,3 +174,97 @@ function clearFields() {
     $("#cTP").val("");
     $("#cDOB").val("");
 }
+
+/*Validations on Enter*/
+
+$(window).keydown(function (e){
+    if (e.key==='Tab'){
+        e.preventDefault();
+    }
+});
+
+$('#cusId').keydown(function (e){
+    let isValid = validateCusID($('#cusId').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        $('#cName').focus();
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
+
+$('#cName').keydown(function (e){
+    let isValid = validateName($('#cName').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        $('#cAddress').focus();
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
+
+$('#cAddress').keydown(function (e){
+    let isValid = validateAddress($('#cAddress').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        $('#cMAil').focus();
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
+
+$('#cMAil').keydown(function (e){
+    let isValid = validateEmail($('#cMAil').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        $('#cTP').focus();
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
+
+$('#cTP').keydown(function (e){
+    let isValid = validatePhone($('#cTP').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        $('#cDOB').focus();
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
+
+$('#cDOB').keydown(function (e){
+    let isValid = validateDate($('#cDOB').val());
+
+    if (isValid && e.key==='Enter') {
+        $(this).css('border','2px solid blue');
+        let id = $("#cusId").val();
+        let isAvailable = isACustomer(id);
+        if (isAvailable) {
+            /* $("#cAddB").textContent("Update");*/
+            updateCustomer(id);
+            getAll();
+            clearFields();
+            $("#cusId").val(generateNewId());
+            /* $("#cAddB").textContent("Add");*/
+        } else {
+            saveCustomer();
+            getAll();
+            clearFields();
+            $("#cusId").val(generateNewId());
+        }
+    } else {
+        $(this).css('border','2px solid red');
+    }
+
+});
