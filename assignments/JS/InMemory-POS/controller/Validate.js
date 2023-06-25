@@ -1,5 +1,6 @@
 var namePattern = /^[a-zA-Z\s'\-]+$/;
 var CusIdPattern = /^C\d{2}-\d{3}$/;
+var OIdPattern = /^O\d{2}-\d{3}$/;
 var ItemCodePattern = /^I\d{2}-\d{3}$/;
 var PricePattern = /^\d+(\.\d{2})?$/;
 var QtyPattern = /^\d+(\.\d+)?$/;
@@ -18,13 +19,18 @@ function validateCusID(id) {
     return isPurCusIdValid;
 }
 
+function validateOID(id) {
+    var isOIDValid = OIdPattern.test(id);
+    return isOIDValid;
+}
+
 function validateItemCode(code) {
-    var isPurCusIdValid = ItemCodePattern.test(code);
+    var isCodeValid = ItemCodePattern.test(code);
     return isCodeValid;
 }
 
 function validatePrice(price) {
-    var isPurCusIdValid = PricePattern.test(price);
+    var isPriceValid = PricePattern.test(price);
     return isPriceValid;
 }
 
