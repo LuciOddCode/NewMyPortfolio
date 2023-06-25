@@ -274,3 +274,59 @@ function loadDate() {
 
     $('#purDate').text(formattedDate);
 }
+
+
+
+/*Validations on Enter*/
+
+
+$('#purItemCode').keydown(function (e) {
+    let isValid = validateItemCode($('#purItemCode').val());
+
+    if (isValid && e.key === 'Enter') {
+        $(this).css('border', '2px solid blue');
+        $('#purItemBrand').focus();
+    } else {
+        $(this).css('border', '2px solid red');
+    }
+
+});
+
+$('#purItemBrand').keydown(function (e) {
+    let isValid = validateName($('#purItemBrand').val());
+
+    if (isValid && e.key === 'Enter') {
+        $(this).css('border', '2px solid blue');
+        $('#purItemUPrice').focus();
+    } else {
+        $(this).css('border', '2px solid red');
+    }
+
+});
+
+$('#purItemUPrice').keydown(function (e) {
+    let isValid = validatePrice($('#purItemUPrice').val());
+
+    if (isValid && e.key === 'Enter') {
+        $(this).css('border', '2px solid blue');
+        $('#purItemQty').focus();
+    } else {
+        $(this).css('border', '2px solid red');
+    }
+
+});
+
+$('#purItemQty').keydown(function (e) {
+    let isValid = validateQty($('#purItemQty').val());
+
+    if (isValid && e.key === 'Enter') {
+        $(this).css('border', '2px solid blue');
+        addToBasket();
+        getAllBasket();
+        calculateSubTotal();
+    } else {
+        $(this).css('border', '2px solid red');
+    }
+
+});
+

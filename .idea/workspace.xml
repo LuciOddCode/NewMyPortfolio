@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eada304-2ad0-48fb-bc02-1eedd8ba20b2" name="Changes" comment="added all pages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/ItemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/Validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/Validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,7 @@
       <workItem from="1687580964446" duration="1327000" />
       <workItem from="1687614211536" duration="4832000" />
       <workItem from="1687681979039" duration="996000" />
-      <workItem from="1687684322981" duration="22097000" />
+      <workItem from="1687684322981" duration="22586000" />
     </task>
     <servers />
   </component>
