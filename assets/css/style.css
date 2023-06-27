@@ -712,11 +712,11 @@ a {
         left: 100px;
         text-align: left;
         top: 45px;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', sans-serif !important;
     }
 
     body > main > section:nth-child(2) > div:nth-child(1) > p {
-        -webkit-text-stroke: 1px white;
+        /*-webkit-text-stroke: 1px white;*/
         margin: 0;
     }
 
@@ -784,7 +784,7 @@ a {
     }
 
     body > main > section:nth-child(2) > div:nth-child(3) > p {
-        -webkit-text-stroke: 1px white;
+        /*-webkit-text-stroke: 1px white;*/
         margin: 0;
     }
 
@@ -815,6 +815,30 @@ a {
         letter-spacing: 0;
 
         color: rgb(235, 38, 20);
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(1) > p >span{
+        opacity:0;
+        transition: all 0.4s ease;
+        transform: translateY(50px);
+        display:inline-block;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(1) > p >span.fade{
+        opacity:1;
+        transform: translateY(0px);
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(3) > p >span{
+        opacity:0;
+        transition: all 0.4s ease;
+        transform: translateY(50px);
+        display:inline-block;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(3) > p >span.fade{
+        opacity:1;
+        transform: translateY(0px);
     }
 
     /*Landing page second potion (Lang and tools)*/

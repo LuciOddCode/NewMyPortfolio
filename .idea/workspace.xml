@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/JS/mainJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/JS/mainJS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/JS/InMemory-POS/controller/PurchaseController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +222,7 @@
       <workItem from="1687769781727" duration="729000" />
       <workItem from="1687774496915" duration="11000" />
       <workItem from="1687793621420" duration="7360000" />
-      <workItem from="1687828117129" duration="6714000" />
+      <workItem from="1687828117129" duration="10711000" />
     </task>
     <servers />
   </component>

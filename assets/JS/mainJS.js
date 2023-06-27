@@ -45,4 +45,48 @@ $('#ShowMoreAssignment').click(function (){
             count=1;
             break;
     }
-})
+});
+
+
+textAnimator(document.getElementById("s1p1"));
+textAnimator(document.getElementById("s1p2"));
+textAnimator(document.getElementById("s1p3"));
+textAnimator(document.getElementById("s1p4"));
+
+textAnimator(document.getElementById("s2p1"));
+textAnimator(document.getElementById("s2p2"));
+textAnimator(document.getElementById("s2p3"));
+textAnimator(document.getElementById("s2p4"));
+
+
+
+
+function textAnimator(element) {
+    const text = element.textContent;
+    const splitText = text.split("");
+
+    element.textContent = ""; // Assign an empty string directly to textContent
+
+    for (let i = 0; i < splitText.length; i++) {
+        element.innerHTML += "<span>" + splitText[i] + "</span>";
+
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        function onTick() {
+            const span = element.querySelectorAll('span')[char]; // Added square brackets around 'span'
+            span.classList.add('fade');
+            char++;
+            if (char === splitText.length) {
+                complete();
+                return;
+            }
+        }
+
+        function complete() {
+            clearInterval(timer);
+            timer = null;
+        }
+    }
+}
+
