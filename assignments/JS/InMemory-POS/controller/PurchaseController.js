@@ -19,9 +19,12 @@ $("#purItemBtnAdd").click(function () {
 
 $('#purDiscount').keydown(function (e) {
     if (e.key==='Enter'){
-        let subTotal=parseFloat(calculateSubTotal());
+        let subTotal=calculateSubTotal();
+        console.log(subTotal)
         let discount=parseFloat($('#purDiscount').val());
+        console.log(discount)
         let netTotal=subTotal-discount;
+        console.log(netTotal)
        $('#purNetTotal').val(netTotal);
     }
 });
@@ -123,10 +126,12 @@ function  calculateSubTotal() {
         total=+basketDB[i].price+total;
     }
     $('#purSubTotal').val(total);
+    return total;
 }
 
 
 function addToBasket() {
+
     let code = $("#purItemCode").val();
     let desc = $("#purItemDesc").val();
     let unitPrice = $("#purItemUPrice").val();
@@ -142,6 +147,7 @@ function addToBasket() {
     newBasketItem.price=price;
 
     basketDB.push(newBasketItem);
+    deductItemQty(code,qty);
 }
 
 function voidItem(code) {
@@ -153,10 +159,12 @@ function voidItem(code) {
     return true;
 }
 
-function updateItemOnCart(code) {
-//   update basket item value
+function  deductItemQty(code,qty) {
+    let itemEdit = searchItem(code);
+    itemEdit.qty=itemEdit.qty-qty;
 
 }
+
 
 
 

@@ -620,7 +620,7 @@ a {
         top: 0;
         z-index: 2;
         flex-wrap: wrap;
-        align-content: space-between;
+        align-content: center;
         justify-content: space-between;
         align-items: center;
 
@@ -635,7 +635,7 @@ a {
         padding-left: 1.2rem;
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: 0 auto 0 20px;
     }
 
     body > main > header > p > span {
@@ -653,6 +653,9 @@ a {
 
     body > main > header > nav > menu {
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     }
 
@@ -665,6 +668,26 @@ a {
         font-weight: bolder;
         font-family: 'Roboto Mono', monospace;
         color: #211f1f!important;
+    }
+    .nav-link{
+        transition: 0.7s ease;
+    }
+
+    .nav-link:hover{
+        color: red;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+        width:25px;
+        height:3px;
+        margin: 5px 0 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color:darkblue;
     }
 
     body > main > section {
@@ -939,6 +962,13 @@ a {
         border: none;
         top: 80%;
         left: 90%;
+    }
+
+
+    body > main > section:nth-child(5) > button:hover{
+        background-color: white;
+        color:#1537f5 ;
+        border: 2px solid #1537f5;
     }
 
     body > main > section:nth-child(5) > div:nth-child(2) > h1 {
@@ -1248,10 +1278,15 @@ a {
     body > main > header {
         position: fixed;
         background: white;
+        display: flex;
         height: 40px;
-        width: 100%;
+        width: 99%;
         top: 0;
         z-index: 2;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
 
     }
 
@@ -1261,10 +1296,10 @@ a {
         font-size: 18px;
         font-weight: bolder;
         font-family: 'Roboto Mono', monospace;
-        left: 20px;
+        padding-left: 1.2rem;
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: 0 auto 0 20px;
     }
 
     body > main > header > p > span {
@@ -1695,7 +1730,7 @@ a {
 
     body > main > section:nth-child(6) > nav > menu > div {
         height: 100px;
-        width: 500px;
+        width: 350px;
         background-color: rgba(255, 155, 155, 0.75);
         position: relative;
         display: block;
@@ -1936,6 +1971,41 @@ a {
         font-family: 'Roboto Mono', monospace;
     }
 
+    .hamburger{
+        display: block;
+
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:25px;
+        flex-direction: column;
+        background-color: #ffffff;
+        /*width:100%;*/
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+     .nav-menu.active{
+         left: 0;
+         width:100%;
+     }
+
+
     body > main > section {
         position: relative;
         display: flex;
@@ -2161,7 +2231,7 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-columns: auto;
-        gap: 50px;
+        gap: 0;
         left: 0;
         right: 0;
         margin: auto;
@@ -2582,9 +2652,7 @@ a {
         font-weight: bolder;
         font-family: 'Roboto Mono', monospace;
         left: 20px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        margin: 0;
     }
 
     body > main > header > p > span {
@@ -2595,7 +2663,7 @@ a {
     body > main > header > nav {
         position: absolute;
         display: inline-block;
-        right: 100px;
+        right: 10px;
         top: 0;
     }
 
@@ -2612,6 +2680,9 @@ a {
         font-size: 12px;
         font-weight: bolder;
         font-family: 'Roboto Mono', monospace;
+    }
+    .hamburger{
+        right:0;
     }
 
     body > main > section {
@@ -2633,7 +2704,8 @@ a {
         font-weight: bolder;
         display: inline;
         z-index: 1;
-        left: 100px;
+        left: 0;
+        right: 0;
         top: 50px;
         font-family: 'Titillium Web', sans-serif;
         text-align: center;
@@ -2692,7 +2764,7 @@ a {
         bottom: 0;
         left: 0;
         right: 0;
-        width: 500px;
+        width: 400px;
         margin: auto;
 
     }
@@ -3284,7 +3356,7 @@ a {
         left: 20px;
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: 0 auto 0 10px;
     }
 
     body > main > header > p > span {
@@ -3295,7 +3367,7 @@ a {
     body > main > header > nav {
         position: absolute;
         display: inline-block;
-        right: 100px;
+        right: 10px;
         top: 0;
     }
 
@@ -3333,7 +3405,9 @@ a {
         font-weight: bolder;
         display: inline;
         z-index: 1;
-        left: 100px;
+        left: 0;
+        right: 0;
+        margin:auto;
         top: 50px;
         font-family: 'Titillium Web', sans-serif;
         text-align: center;
@@ -3392,7 +3466,7 @@ a {
         bottom: 0;
         left: 0;
         right: 0;
-        width: 500px;
+        width: 350px;
         margin: auto;
 
     }
@@ -3729,7 +3803,7 @@ a {
 
     body > main > section:nth-child(6) > div > figure > img {
         filter: saturate(120%);
-
+        width:350px;
     }
 
 
@@ -3849,7 +3923,7 @@ a {
     body > main > section:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) input {
         position: relative;
         display: block;
-        width: 400px;
+        width: 350px;
         height: 88px;
         background-color: #1537f5;
         color: white;
@@ -3864,7 +3938,7 @@ a {
         position: relative;
         display: inline-block;
         font-size: 40px;
-        width: 400px;
+        width: 350px;
         height: 88px;
         text-align: right;
         top: -70px;
@@ -3981,10 +4055,10 @@ a {
         font-size: 18px;
         font-weight: bolder;
         font-family: 'Roboto Mono', monospace;
-        left: 20px;
+        left: 10px;
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: 0 auto 0 5px;
     }
 
     body > main > header > p > span {
@@ -4033,8 +4107,10 @@ a {
         font-weight: bolder;
         display: inline;
         z-index: 1;
-        left: 100px;
+        left:0;
+        right:0;
         top: 50px;
+        margin:auto;
         font-family: 'Titillium Web', sans-serif;
         text-align: center;
     }
@@ -4092,7 +4168,7 @@ a {
         bottom: 0;
         left: 0;
         right: 0;
-        width: 500px;
+        width: 300px;
         margin: auto;
 
     }
@@ -4429,7 +4505,7 @@ a {
 
     body > main > section:nth-child(6) > div > figure > img {
         filter: saturate(120%);
-
+        width:300px;
     }
 
 
@@ -4456,7 +4532,7 @@ a {
 
     body > main > section:nth-child(6) > nav > menu > div {
         height: 100px;
-        width: 350px;
+        width: 300px;
         background-color: rgba(255, 155, 155, 0.75);
         position: relative;
         display: block;
@@ -4474,10 +4550,12 @@ a {
 
     body > main > section:nth-child(6) > nav > menu > div:nth-child(2) {
         left: 0;
+        width:300px;
     }
 
     body > main > section:nth-child(6) > nav > menu > div:nth-child(1) {
         left: 0;
+        width:300px;
     }
 
     body > main > section:nth-child(6) > nav > menu > div > a {
@@ -4544,12 +4622,13 @@ a {
     body > main > section:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
         position: relative;
         top: 15%;
+        width: 300px;
     }
 
     body > main > section:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) input {
         position: relative;
         display: block;
-        width: 400px;
+        width: 300px;
         height: 88px;
         background-color: #1537f5;
         color: white;
@@ -4562,9 +4641,9 @@ a {
 
     body > main > section:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) i {
         position: relative;
-        display: inline-block;
+        display: none;
         font-size: 40px;
-        width: 400px;
+        width: 200px;
         height: 88px;
         text-align: right;
         top: -70px;

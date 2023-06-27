@@ -1,25 +1,48 @@
-/*
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-function letter(string,div){
-    let s=string;
-    let ltrUse=string;
-    let index=0;
-    $(div).text(s.substring(0,index));
-    index++;
+hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
 
-    if (index===string.length+1){
-        index=0;
-        s=ltrUse;
+document.querySelectorAll(".nav-link").forEach((n) => {
+    n.addEventListener("click", () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
 
+
+let count=1;
+$('#ShowMoreAssignment').click(function (){
+    switch (count){
+        case 1:
+            $('#cssAssignments').css('display','none');
+            $('#cssFWAssignments').css('display','flex');
+            count++;
+            break;
+        case 2:
+            $('#cssFWAssignments').css('display','none');
+            $('#transitionAssignments').css('display','flex');
+            count++;
+            break;
+        case 3:
+            $('#transitionAssignments').css('display','none');
+            $('#JsAssignments').css('display','flex');
+            count++;
+            break;
+        case 4:
+            $('#JsAssignments').css('display','none');
+            $('#cssAssignments').css('display','flex');
+            count=1;
+            break;
+        default:
+            $('#transitionAssignments').css('display','none');
+            $('#cssFWAssignments').css('display','none');
+            $('#JsAssignments').css('display','none');
+            $('#cssAssignments').css('display','flex');
+            count=1;
+            break;
     }
-}
-
-
-$(document).ready(function() {
-    setInterval(letter("Hi There...","#s1p1"),100);
-   /!* setInterval(letter("I am Rusiru buuut...","#s1p2"),100);
-    setInterval( letter("You can call me","#s1p3"),100);
-    setInterval( letter("Luci.","#s1p4"),100);*!/
-
-
-});*/
+})
