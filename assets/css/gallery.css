@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Paytone One', sans-serif;
+    box-sizing: border-box;
+}
 body{
     background: #02134b;
+
+}
+p{
+ width:80%;
+    left:0;
+    right: 0;
+    top:0;
+    margin:auto;
 }
 /*header styles*/
 body > header {
@@ -75,11 +88,32 @@ body>section{
 
 .gallery div img{
     width:100%;
+    filter:grayscale(100%);
+    transition: transform 0.5s;
 }
 
 .gallery::-webkit-scrollbar{
     display:none;
 }
+
+.gallery-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+}
+
+#btnBack,#btnNext{
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover{
+    filter:grayscale(0);
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
 footer {
     position: relative;
     color: #fff;
@@ -104,6 +138,10 @@ footer > p > span:nth-child(3) {
     position: relative;
     width: fit-content;
     padding-left: 100px;
+}
+
+section>div:nth-child(2)>div{
+    display:none;
 }
 
 
