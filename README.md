@@ -18,9 +18,7 @@ InfinityFree : Loading...| <br>
 GitHub Pages : [https://derickferdinands.github.io/My-Portfolio/](https://lucioddcode.github.io/NewMyPortfolio/) <br>
 
 <h3> Web POS Using CSS FrameWorks</h3>
- Site-Map : https://www.gloomaps.com/zxx4GxZRAF <br>
- WireFrame : https://wireframe.cc/rscMG4 <br>
- Mockup : [https://www.figma.com/file/cIj3btZnkIvPes2Dw89Kph/Untitled?node-id=0%3A1](https://www.figma.com/file/ijHRsOp4LrWuQhFxhoeIYt/MockUp?type=design&node-id=0%3A1&mode=design&t=5rHkCatpGlocNh3K-1) <br>
+
 <h3>Developed By Rusiru H. Dasanayaka (aka Luci)</h3>
 
 Desktop View
