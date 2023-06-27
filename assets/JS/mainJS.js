@@ -58,7 +58,19 @@ textAnimator(document.getElementById("s2p2"));
 textAnimator(document.getElementById("s2p3"));
 textAnimator(document.getElementById("s2p4"));
 
+const observer = new IntersectionObserver((entries  )=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        }else {
+            entry.target.classList.remove("show");
 
+        }
+    });
+});
+
+const sections=document.querySelectorAll('.scroll-animate');
+sections.forEach((el)=>observer.observe(el));
 
 
 function textAnimator(element) {

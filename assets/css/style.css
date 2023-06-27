@@ -607,6 +607,14 @@ a {
     text-decoration: none;
 }
 
+.scroll-animate{
+    opacity:0;
+    transition:all 1s;
+}
+
+.show{
+    opacity: 1;
+}
 
 /*media queries*/
 /*Laptop large*/

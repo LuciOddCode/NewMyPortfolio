@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html {
-    height: 100vh;
-    width: 99%;
-
-}
-
-body {
-    height: 100vh;
-    width: 99%;
-}
 
 /*header styles*/
 body > header {
@@ -62,102 +52,7 @@ body > header > nav > menu > li {
 }
 
 /*slide show gallery*/
-section {
-    width: 98vw;
-    height: 100vh;
-    border: 2px solid black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    overflow: hidden;
-}
 
-section > div {
-    width: calc(100% * 6);
-    height: 100%;
-    display: flex;
-    animation-name: slider;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-section > div > div {
-    height: 100%;
-    flex-grow: 1;
-
-}
-
-section > div > div:nth-child(1) {
-    background: url("/assets/img/Whoami/2022_12_08_15_52_IMG_0608.JPG");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div:nth-child(2) {
-    background: url("/assets/img/Whoami/gallery/5.jpg");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div:nth-child(3) {
-    background: url("/assets/img/Whoami/gallery/IMG-20210909-WA0185.jpg");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div:nth-child(4) {
-    background: url("/assets/img/Whoami/gallery/IMG-20220713-WA0030.jpg");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div:nth-child(5) {
-    background: url("/assets/img/Whoami/gallery/IMG_20220522_192503_304.jpg");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div:nth-child(6) {
-    background: url("/assets/img/Whoami/gallery/IMG_20220610_115241-01.jpeg");
-    background-size: cover;
-    background-position: top;
-}
-
-section > div > div > p {
-    position: absolute;
-    display: inline-block;
-
-}
-
-@keyframes slider {
-    0%, 4% {
-        transform: translateX(0);
-    }
-    16%, 20% {
-        transform: translateX(calc((100% / 6) * -1));
-    }
-    32%, 36% {
-        transform: translateX(calc((100% / 6) * -2));
-    }
-    48%, 52% {
-        transform: translateX(calc((100% / 6) * -3));
-    }
-    64%, 68% {
-        transform: translateX(calc((100% / 6) * -4));
-    }
-    80%, 84% {
-        transform: translateX(calc((100% / 6) * -5));
-    }
-    96%, 100% {
-        transform: translateX(calc((100% / 6) * -6));
-    }
-
-
-}
 
 
 footer {
