@@ -14,8 +14,8 @@ Wirefram : [https://wireframe.cc/zS4vUh](https://drive.google.com/file/d/1BubnY8
 Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3A1
 
 <h3>Deployment</h3>
-InfinityFree : http://ferdfolio.epizy.com <br>
-GitHub Pages : https://derickferdinands.github.io/My-Portfolio/ <br>
+InfinityFree : Loading...| <br>
+GitHub Pages : [https://derickferdinands.github.io/My-Portfolio/](https://lucioddcode.github.io/NewMyPortfolio/) <br>
 
 <h3> Web POS Using CSS FrameWorks</h3>
  Site-Map : https://www.gloomaps.com/zxx4GxZRAF <br>
