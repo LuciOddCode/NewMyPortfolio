@@ -4774,6 +4774,15 @@ a {
 
 }
 
+#pre-loader{
+    background: #ffffff url("/assets/img/hell trans.gif") no-repeat center center fixed;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 /*Animations*/
 
 
