@@ -713,13 +713,14 @@ a {
     /*First intro text*/
     body > main > section:nth-child(2) > div:nth-child(1) {
         position: absolute;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: bolder;
         display: inline;
         z-index: 1;
         left: 100px;
         text-align: left;
         top: 45px;
+        line-height: calc(45px*1.2);
         font-family: 'Titillium Web', sans-serif !important;
     }
 
@@ -781,13 +782,14 @@ a {
 
     body > main > section:nth-child(2) > div:nth-child(3) {
         position: absolute;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: bolder;
         display: inline;
         z-index: 1;
         right: 5%;
         text-align: right;
         bottom: 10%;
+        line-height: calc(45px*1.2);
         font-family: 'Titillium Web', sans-serif;
     }
 
